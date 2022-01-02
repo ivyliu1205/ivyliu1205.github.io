@@ -1,17 +1,13 @@
 nav {
     background-color: #2258d7;
-    height: 50px;
+    height: 65px;
     width: 100%;
-    margin: 0;
 }
 
 .nav-container,
 .nav-container div {
     display: flex;
-    /* flex-direction: row; */
     list-style: none;
-    margin: 0;
-    padding: 0;
     width: 100%;
 }
 
@@ -20,12 +16,47 @@ nav {
 }
 
 /* Navbar left */
+
+/* Start seaction */
 #start-btn-container {
     background-color: #1d941d;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 3px;
+    border-top-right-radius: 12%;
+    border-bottom-right-radius: 12%;
+    /* margin: -9px 0; */
+}
+
+#start-btn-container:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#menu-icon {
+    width: 30px;
+    display: block;
+}
+
+#menu-text {
+    display: block;
+    float: left;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+/* Other seaction */
+#navbar-left-other-container {
+    margin: 2px;
 }
 
 .other-btn-containers {
     background-color: #3980f4;
+    padding: 5px;
+    margin: 0 3px;
+    width: 80px;
 }
 
 /* Navbar Right */
