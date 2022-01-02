@@ -45,8 +45,8 @@ html, #root {
 /* App */
 .page-container {
   /* background-color: #577a1d; */
-  background-image: url('../src/asserts/Windows-XP.jpg');
-  background-size: auto;
+  background-image: url('../src/asserts/Background.jpg');
+  background-size: 100% 115%;
   width: 100%;
   height: calc(100vh - 50px);
   margin: 0;

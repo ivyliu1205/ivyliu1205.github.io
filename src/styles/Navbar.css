@@ -61,6 +61,8 @@ nav {
 
 /* Navbar Right */
 #navbar-right {
-    width: 100px;
+    width: 150px;
     background-color: #0e8ae4;
+    color: white;
+    font-weight: bold;
 }

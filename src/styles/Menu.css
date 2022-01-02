@@ -46,6 +46,30 @@
 #menu-app-section {
     background-color: white;
     height: 50%;
+    text-align: left;
+}
+
+.menu-app-items {
+    height: 40px;
+    display: flex;
+    justify-content: left;
+    border-bottom: 1px solid gray;
+    padding: 5px;
+}
+
+.menu-app-icons {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.menu-app-texts {
+    width: 50%;
+    padding-top: 5px;
+}
+
+.menu-app-items:hover {
+    cursor: pointer;
+    background-color: lightgrey;
 }
 
 /* Tool Section */

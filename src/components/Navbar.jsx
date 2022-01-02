@@ -4,8 +4,15 @@ import 'bootstrap/dist/css/bootstrap.css'
 import MenuIcon from '../asserts/menu.svg'
 
 export default function Navbar (props) {
-    // const [menuIsOpen, setMenuIsOpen] = React.useState(false);
-    const { menuState, changeMenuState } = props;
+    const { menuState, changeMenuState } = props
+    const [dt, setDt] = React.useState(new Date().toLocaleString())
+    
+    React.useEffect(() => {
+        let secTimer = setInterval(() => {
+            setDt(new Date().toLocaleString())
+        }, 1000)
+        return () => clearInterval(secTimer)
+    }, [])
 
     function handleClickStart() {
         console.log('handleClickStart')
@@ -26,7 +33,7 @@ export default function Navbar (props) {
                         </div>
                     </div>
                     <div id="navbar-right">
-                        <li>Time</li>
+                        {dt}
                     </div>
                 </div>
         </nav>
