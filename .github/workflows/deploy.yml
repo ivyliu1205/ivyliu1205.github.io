@@ -47,7 +47,6 @@ jobs:
       - name: Install hexo
         run: |
           npm install hexo-cli -g
-          npm ci
       
       # - name: Install fluid
       #   run: npm install --save hexo-theme-fluid
