@@ -26,13 +26,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      # - name: Checkout theme repo
-      #   uses: actions/checkout@v2
-      #   with:
-      #     repository: ${{ env.THEME_REPO }}
-      #     ref: ${{ env.THEME_BRANCH }}
-      #     path: themes/concise
-
       - name: Checkout deploy repo
         uses: actions/checkout@v2
         with:
@@ -59,8 +52,10 @@ jobs:
 
       - name: Install dependencies
         run: |
+          npm install hexo-cli -g
           npm install
 
       - name: Deploy hexo
         run: |
-          npm run deploy
+          hexo clean
+          hexo d
