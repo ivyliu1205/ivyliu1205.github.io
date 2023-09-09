@@ -10,7 +10,7 @@ env:
   GIT_EMAIL: ivy1205liu@gmail.com
   THEME_REPO: ivyliu1205/ivyliu1205.github.io
   THEME_BRANCH: main
-  DEPLOY_REPO: ivyliu1205/ivy1205liu.github.io
+  DEPLOY_REPO: ivyliu1205/ivyliu1205.github.io
   DEPLOY_BRANCH: main
 
 jobs:
