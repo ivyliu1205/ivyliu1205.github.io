@@ -57,7 +57,6 @@ jobs:
 
       - name: Deploy hexo 
         run: |
-          # hexo clean
           hexo g
           hexo d
           ls -R public/
