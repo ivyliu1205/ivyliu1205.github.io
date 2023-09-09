@@ -42,11 +42,14 @@ jobs:
           git config --global user.name $GIT_USER
           git config --global user.email $GIT_EMAIL
 
-      - name: Install dependencies
-        run: |
-          npm install hexo-cli -g
-          npm install --save hexo-theme-fluid
-          npm install
+      - name: Install hexo
+        run: npm install hexo-cli -g
+      
+      - name: Install fluid
+        run: npm install --save hexo-theme-fluid
+        
+      - name: Install npm
+        run: npm install
 
       - name: Deploy hexo
         run: |
