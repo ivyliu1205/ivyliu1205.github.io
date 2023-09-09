@@ -103,7 +103,7 @@ theme: fluid
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/ivyliu1205/ivyliu1205.github.io
-  branch: [main]
+  repo: git@github.com:ivyliu1205/ivyliu1205.github.io.git
+  branch: main
   message: [Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}]
 
