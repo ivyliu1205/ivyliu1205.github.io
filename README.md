@@ -57,4 +57,4 @@ More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
 
 ## Resources
 
-- [Fluid Theme](https://github.com/fluid-dev/hexo-theme-fluid)
+- [Fluid Theme Manual](https://hexo.fluid-dev.com/docs/)
