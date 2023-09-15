@@ -6,7 +6,3 @@ node_modules/
 public/
 .deploy*/
 _multiconfig.yml
-
-# Keys
-github-deploy-key
-github-deploy-key.pub
