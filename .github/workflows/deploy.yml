@@ -1,62 +1,34 @@
-name: Pages CI
+name: Pages
 
 on:
   push:
-    branches: ["main"]
-
-env:
-  GIT_USER: ivyliu1205
-  GIT_EMAIL: ivy1205liu@gmail.com
-  THEME_REPO: ivyliu1205/ivyliu1205.github.io
-  THEME_BRANCH: main
-  DEPLOY_REPO: ivyliu1205/ivyliu1205.github.io
-  DEPLOY_BRANCH: main
+    branches:
+      - main # default branch
 
 jobs:
-  build:
-    name: Build on node ${{ matrix.node_version }} and ${{ matrix.os }}
+  pages:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          submodules: 'true'
-
-      - name: Use Node.js
+      - uses: actions/checkout@v2
+      - name: Use Node.js 20.x
         uses: actions/setup-node@v2
         with:
-          node-version: '16'
-
-      - name: Configuration environment
-        env:
-          HEXO_DEPLOY_PRI: ${{secrets.HEXO_DEPLOY_PRI}}
-        run: |
-          mkdir -p ~/.ssh/
-          echo "$HEXO_DEPLOY_PRI" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
-          git config --global user.name $GIT_USER
-          git config --global user.email $GIT_EMAIL
-
-      - name: Install hexo
-        run: |
-          npm install --save hexo-theme-fluid
-          npm install hexo-cli -g
-      
-      # - name: Install fluid
-      #   run: 
-        
-      - name: Install npm
+          node-version: "20"
+      - name: Cache NPM dependencies
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-npm-cache
+          restore-keys: |
+            ${{ runner.OS }}-npm-cache
+      - name: Install Dependencies
         run: npm install
-
-      - name: Deploy hexo 
-        run: |
-          hexo g
-          hexo d
-          ls -R public/
+      - name: Build
+        run: npm run build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
