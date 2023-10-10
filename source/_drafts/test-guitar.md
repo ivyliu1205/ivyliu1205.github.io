@@ -1,6 +1,6 @@
 ---
 title: test guitar
-categories: Guitar
+categories: Draft
 date: 2023-09-15 16:44:18
 updated: 2023-09-15 16:44:18
 tags:
