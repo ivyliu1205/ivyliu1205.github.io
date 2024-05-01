@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>Reading Lists</title>
+    <link href="/2023/10/11/Reading-List/"/>
+    <url>/2023/10/11/Reading-List/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>My must-read reading lists</p></blockquote><span id="more"></span><h2 id="Symbols"><a href="#Symbols" class="headerlink" title="Symbols"></a>Symbols</h2><p>Reading status</p><table><thead><tr><th>Meaning</th><th>Symbols</th></tr></thead><tbody><tr><td>Finish Reading</td><td>✅</td></tr><tr><td>Not Started</td><td>❌</td></tr><tr><td>Reading In Progress</td><td>👀</td></tr></tbody></table><h2 id="Technology-articles"><a href="#Technology-articles" class="headerlink" title="Technology articles"></a>Technology articles</h2><table><thead><tr><th>Titles</th><th>Links</th><th>Notes</th><th>Reading status</th></tr></thead><tbody><tr><td>Avoiding Double Payments in a Distributed Payments System</td><td><a href="https://medium.com/airbnb-engineering/avoiding-double-payments-in-a-distributed-payments-system-2981f6b070bb">Link</a></td><td>Translate to Chinese</td><td>❌</td></tr></tbody></table><h2 id="Technology-books"><a href="#Technology-books" class="headerlink" title="Technology books"></a>Technology books</h2><table><thead><tr><th>Titles</th><th>Links</th><th>Recommand reasons</th><th>Reading status</th></tr></thead><tbody><tr><td>Designing Data-Intensive Applications</td><td><a href="https://github.com/ms2ag16/Books/blob/master/Designing%20Data-Intensive%20Applications%20-%20Martin%20Kleppmann.pdf">EN</a>, <a href="http://ddia.vonng.com/#/">CN</a></td><td>A required reading book for software engineers</td><td>❌</td></tr></tbody></table>]]></content>
+    
+    
+    <categories>
+      
+      <category>Journal</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Reading</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>记一次更换Ubuntu主题的经历</title>
+    <link href="/2023/10/07/%E8%AE%B0%E4%B8%80%E6%AC%A1%E6%9B%B4%E6%8D%A2Ubuntu%E4%B8%BB%E9%A2%98%E7%9A%84%E7%BB%8F%E5%8E%86/"/>
+    <url>/2023/10/07/%E8%AE%B0%E4%B8%80%E6%AC%A1%E6%9B%B4%E6%8D%A2Ubuntu%E4%B8%BB%E9%A2%98%E7%9A%84%E7%BB%8F%E5%8E%86/</url>
+    
+    <content type="html"><![CDATA[<div class="note note-info">            <p>从入职以来，工作电脑一直用的是 Ubuntu 默认主题。看了这么久，着实已经看腻了，所以这次我打算趁着<del>摸鱼</del>工作间隙，把我的电脑主题更换一下。</p>          </div><span id="more"></span><p>以下，就是本次的记录</p><p>首先，我的系统配置如下:</p><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">Ubuntu</span>: <span class="hljs-number">20</span>.<span class="hljs-number">04</span><br><span class="hljs-attribute">GNOME</span> Shell: <span class="hljs-number">3</span>.<span class="hljs-number">36</span>.<span class="hljs-number">9</span><br></code></pre></td></tr></table></figure><h2 id="Step-1-安装-Gnome-Tweaks-工具"><a href="#Step-1-安装-Gnome-Tweaks-工具" class="headerlink" title="Step 1: 安装 Gnome Tweaks 工具"></a>Step 1: 安装 <code>Gnome Tweaks</code> 工具</h2><p>在确认好系统配置之后，就可以进行第一步了 – 安装 <code>GNOME Tweaks</code> 工具</p><div class="note note-info">            <p><strong><a href="https://gitlab.gnome.org/GNOME/gnome-tweaks">GNOME Tweaks</a></strong> 是一款在原本设置项目的基础上，能够提供更多自定义设置项的工具，包括了修改主题、修改字体、应用各种扩展工具等等等</p><p><img src="/../images/2023.10.07/f44f90aa0dc3af92eac8faae560cb97c31f9da587e99ab9a444cbfc838f5af6f.png" alt="picture 1">  </p>          </div><p>它的安装有两种方法:</p><p><strong>第一种</strong>: 应用商店搜索 <span class="label label-default">GNOME Tweaks</span> - 下载安装 </p><p><img src="/../images/2023.10.07/312c81ab898c0cb667be5cacfef7b316834c65910a1b5bdc766e71f434893ae7.png" alt="picture 3" title="应用商店内截图">  </p><p><strong>第二种</strong>: 使用命令行（<em>我使用的方法</em>）</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo apt-get update<br>sudo apt-get install gnome-tweak-tool<br></code></pre></td></tr></table></figure><p>安装完成之后，就可以从应用程序列表里打开它了</p><p>图标长这样:<br><img src="/../images/2023.10.07/ff15f42505cc96746788670f62ea84ff6cb9a6cf14f7e8082fb6afc158a4314e.png" alt="picture 6" title="Tweaks 图标">  </p><p>打开之后，长这样:<br><img src="/../images/2023.10.07/c3ecd67e2599c420cef1c566c7930df727792c97a6c2909ce0efd49a28da305d.png" alt="picture 4" title="Tweaks 内截图">  </p><h2 id="Step-2-安装-User-themes-扩展工具"><a href="#Step-2-安装-User-themes-扩展工具" class="headerlink" title="Step 2: 安装 User themes 扩展工具"></a>Step 2: 安装 <code>User themes</code> 扩展工具</h2><p>在 <code>Gnome Tweaks</code> 里打开 <code>Appearance</code> 后，可能会发现 <code>Themes</code> - <code>Shell</code> 那里有个感叹号，这是因为没有安装更换主题需要的扩展工具 (Extension)<br><img src="/../images/2023.10.07/3fabd698105dc33b0f21698d7ba9d58592434fbb9068354d549dc3574d8a3e3a.png" alt="picture 5" title="感叹号示意图">  </p><p><strong>第一步</strong>: 安装支持扩展工具 (Extension) 的工具</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo apt-get install gnome-shell-extensions <br></code></pre></td></tr></table></figure><p>安装完成之后，会出现一个这样的图标:<br><img src="/../images/2023.10.07/d891f36ea2400985b13ab2b4d5e12c770b50aa901d00a39d8050f3dab1176376.png" alt="picture 7" title="Extensions 图标"></p><p>这个图标点开之后，和从 <code>Tweaks</code> 打开的 <code>Extensions</code> 页面一样</p><p><strong>第二步</strong>: 下载浏览器集成插件</p><p>由于之后需要从浏览器下载扩展工具, 所以我们还需要一个浏览器集成插件，我这里使用的是 <code>Chrome</code> 浏览器</p><p>用命令行安装 <code>chrome-gnome-shell</code> 插件</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo apt-get install chrome-gnome-shell<br></code></pre></td></tr></table></figure><div class="note note-success">            <p><strong>TIP</strong></p><p>其他浏览器集成插件的下载方法，可以看这个链接 👉🏻 <a href="https://wiki.gnome.org/Projects/GnomeShellIntegration/Installation">https://wiki.gnome.org/Projects/GnomeShellIntegration/Installation</a></p>          </div><p><strong>第三步</strong>: 下载 <code>User Themes</code> 扩展工具</p><ul><li><p>通过浏览器找到 <a href="https://extensions.gnome.org/extension/19/user-themes/">User Themes Extension</a></p></li><li><p>把 <code>OFF</code> 调成 <code>ON</code></p><p>  <img src="/../images/2023.10.07/66cbcbe4fde0d695fb8898f5dc427c39bbd5c4f029f9206f1eea71c48d7e3e6a.png" alt="picture 8" title="开关示意图"></p></li></ul><div class="note note-success">            <p><strong>TIP</strong></p><p>其他更多扩展工具，可以看这个链接 👉🏻 <a href="https://extensions.gnome.org/">https://extensions.gnome.org/</a></p>          </div><p><strong>第四步</strong>: 确认 <code>User Themes</code> 扩展工具已经启用</p><p>打开 <code>Tweaks</code>, 左侧列表找到 <code>Extensions</code>, 确认最上面的开关和下面的 <code>User themes</code> 的开关都已经打开</p><p><img src="/../images/2023.10.07/503344c5c3d74664e2026e19891581aa33add6b6385d24427ba1a4a78e22181c.png" alt="picture 9">  </p><p>最后，回到 <code>Tweaks</code> 里的 <code>Appearance</code> 页面，发现 <code>Shell</code> 一栏可以调整了</p><p><img src="/../images/2023.10.07/112403c7a8897d83d8c9eb88c191df435982d9897e971c658e3d77993a2379ab.png" alt="picture 10" title="可以调整示意图">  </p><p>大功告成！🍻</p><h2 id="Step-3-更换喜欢的主题"><a href="#Step-3-更换喜欢的主题" class="headerlink" title="Step 3: 更换喜欢的主题"></a>Step 3: 更换喜欢的主题</h2><p>前面的准备都已经就绪之后，就可以准备更换主题了</p><div class="note note-info">            <p>可以在 <code>GNOME Look</code> 这里网站，找到 <code>GTK3/4 Themes</code> 一栏，从里面选择喜欢的主题下载下来</p><ul><li>GNOME_LOOK.ORG： <a href="https://www.gnome-look.org/s/Gnome/browse/">https://www.gnome-look.org/s/Gnome/browse/</a></li><li>📌 GTK3&#x2F;4 Themes：<a href="https://www.gnome-look.org/browse?cat=135&ord=rating">https://www.gnome-look.org/browse?cat=135&ord=rating</a></li></ul>          </div><p>以 <a href="https://www.gnome-look.org/p/1267246">Nordic 主题</a> 为例:</p><p><strong>第一步</strong>: 下载主题压缩包<br>找到最右边的 <code>Download</code>, 它下面会有很多不同的主题包，可以都下载下来一个一个试试看</p><p><img src="/../images/2023.10.07/42a60af0a055f333f4b3cbe2b8d6837ab9c19cf32986cad3299a575521968dd6.png" alt="picture 11" title="主题详情页">  </p><p><img src="/../images/2023.10.07/8a04c26c05d505769a55aae770e38f514c34d5a894cd8887506726e7853c64c5.png" alt="picture 12" title="主题下载页">  </p><p><strong>第二步</strong>: 解压压缩包</p><p>在主题压缩包下载完成之后，去下载目录里找到它，并通过 <code>Extract Here</code> 把它解压到当前文件夹</p><p><strong>第三步</strong>: 移动到主题文件夹下</p><p>为了让 <code>Tweaks</code> 能够识别到你下载的主题，需要把解压好的文件夹移动到 <code>/usr/share/themes</code> 下 </p><div class="note note-info">            <p>有的教程说也可以移动到 <code>~/.themes</code> 下，但我在翻看这些主题的 <code>issues</code> 板块时，发现有很多反馈说移动到 <code>~/.themes</code>之后，出了各种各样的问题，所以还是直接移动到 <code>/usr/share/themes</code> 比较好。</p>          </div><p>移动的时候，可以直接使用 <code>mv</code> 命令</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo mv Nordic /usr/share/themes<br></code></pre></td></tr></table></figure><p><strong>第四步</strong>: 重启 <code>Tweaks</code>, 并更换主题</p><p>进入 <code>Appearance</code>, 把 <code>Applications</code> 和 <code>Shell</code> 更换为新的主题 </p><p>All done！🍻</p><h2 id="题外话"><a href="#题外话" class="headerlink" title="题外话"></a>题外话</h2><p>一般来说，按照评分从高到低选择自己喜欢的主题下载就可以了。但我在选择主题的时候，遇到了有些主题和我的系统不适配的情况。在我浏览了它们所有的 <code>issues</code> 都没有找到解决方案的情况下，只好换成了只有一般般喜欢的主题 😿</p><p>当然，除了主题之外，也可以从 <code>GNOME-LOOK</code> 上下载自己喜欢的图标、鼠标样式等等等等等等</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Technical Journal</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>中文</tag>
+      
+      <tag>Ubuntu</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
