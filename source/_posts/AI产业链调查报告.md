@@ -1,10 +1,11 @@
 ---
 title: AI产业链调查报告
+categories: Draft
 date: 2024-05-01 11:04:05
 updated: 2024-05-01 11:04:05
-categories: Draft
-tags: 
+tags: [中文]
 ---
+
 ## AI产业链及代表企业
 
 
