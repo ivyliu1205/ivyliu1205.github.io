@@ -15,18 +15,18 @@ More info: [Writing](https://hexo.io/docs/writing.html)
 ### Create a new draft
 
 ``` bash
-$ hexo new draft <title>
+./scripts/controller.sh -c <title> draft
 ```
 
 Check all files, including drafts: 
 ``` bash
-$ hexo S --draft
+./scripts/controller.sh -r draft
 ```
 
 ### Publish a draft
 
 ``` bash
-$ hexo P <filename>
+./scripts/controller.sh -p <title>
 ```
 
 ## Server
@@ -34,7 +34,7 @@ $ hexo P <filename>
 ### Run server
 
 ``` bash
-$ hexo server
+./scripts/controller.sh -r
 ```
 
 More info: [Server](https://hexo.io/docs/server.html)
@@ -42,7 +42,7 @@ More info: [Server](https://hexo.io/docs/server.html)
 ### Generate static files
 
 ``` bash
-$ hexo generate
+./scripts/controller.sh -g
 ```
 
 More info: [Generating](https://hexo.io/docs/generating.html)
@@ -50,7 +50,7 @@ More info: [Generating](https://hexo.io/docs/generating.html)
 ### Deploy to remote sites
 
 ``` bash
-$ hexo deploy
+./scripts/controller.sh -d
 ```
 
 More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
