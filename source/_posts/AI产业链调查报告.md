@@ -1,28 +1,29 @@
 ---
 title: AI产业链调查报告
-categories: Draft
+categories: Technical Journal
 date: 2024-05-01 11:04:05
 updated: 2024-05-01 11:04:05
-tags: [中文]
+tags: [中文, AI]
+excerpt: "一个简单的AI产业链调查"
 ---
 
-## AI产业链及代表企业
+# AI产业链及代表企业
 
 
-### 上游：硬件层 (参考性一般)
+## 上游：硬件层
 > 包括：芯片、算力、半导体、CPO、光模块等关键技术领域
-#### Semiconductor: 半导体
-> - 一种介于导体和绝缘体中间的物质, 基础材料是硅
-> - 由四个组成部分组成
-	- 集成电路（Integrated circuit): 占 80% +
-	- 光电器件
-	- 分立器件
-	- 传感器
-> - 其中集成电路：分为以下四类（也统称为芯片 Chip）
-	- 微处理器
-	- 存储器
-	- 逻辑器件
-	- 模拟器件
+### Semiconductor: 半导体
+> - 一种介于导体和绝缘体中间的物质, 基础材料是硅  
+> - 由四个组成部分组成  
+	- 集成电路 (Integrated circuit): 占 80% +  
+	- 光电器件  
+	- 分立器件  
+	- 传感器  
+> - 其中集成电路：分为以下四类（也统称为芯片 Chip）  
+	- 微处理器  
+	- 存储器  
+	- 逻辑器件  
+	- 模拟器件  
 
 全球：
 根据TechInsights报告显示，2023年全球TOP25半导体公司分别为:
@@ -55,19 +56,19 @@ tags: [中文]
 大陆：
 ![s](https://img.36krcdn.com/hsossms/20240320/v2_db558fcf5e9e4696bb5734e00f6ce685@000000_oswg1033349oswg1080oswg3165_img_000?x-oss-process=image/format,jpg/interlace,1/format,jpg/interlace,1/format,jpg/interlace,1)
 
-#### Optical Module: 光模块
+### Optical Module: 光模块
 光模块链路：
 ![a](https://img.36krcdn.com/hsossms/20231019/v2_775777ba9bf54ddfa6278a176aa93b7d@5967662_oswg181110oswg1080oswg439_img_000?x-oss-process=image/format,jpg/interlace,1/format,jpg/interlace,1/format,jpg/interlace,1/format,jpg/interlace,1/format,jpg/interlace,1)
 
-##### 更多参考
+#### 更多参考
 - [英伟达吃肉，光模块喝汤？](https://36kr.com/p/2480834050072704)
 - [Introduction And Application Of Optical Modules](https://www.researchhub.com/post/1998/introduction-and-application-of-optical-modules)
 - [清晰明了！10分钟讲懂光模块【深度报告】](https://www.bilibili.com/video/BV1aN41117K1/?spm_id_from=333.337.search-card.all.click&vd_source=cebe69f84577caa5e4b4425764aef2cb)
-#### 【最核心】Processors: 处理器, 核心是芯片
+### Processors: 处理器, 核心是芯片
 > - 为AI提供算力, 每种处理器擅长处理的计算不一样，需要按照AI项目的需要选择
 > - 处理器的不同主要由芯片来决定
 
-##### 按硬件类型分类
+#### 按硬件类型分类
 - CPU: 中央处理器
 	- CPU是计算机系统中的主要处理器，用于执行大部分的通用计算任务，目前常用于家用电脑和手机
 	- 它负责处理指令、控制计算机的各个组件以及执行软件程序。CPU通常具有多个核心，每个核心都能执行指令序列，进行算术和逻辑运算，并处理内存中的数据
@@ -93,10 +94,10 @@ tags: [中文]
 		- Nvidia: BlusField系列
 - QPU: 量子处理器（发展前景大，但目前无成熟产品）
 	- QPU是用于执行量子计算的处理器。与传统的计算机架构不同，量子计算利用量子力学原理，以量子比特（qubit）作为计算的基本单位。QPU能够处理和操作量子态，执行特定的量子算法，以解决某些问题中的复杂计算和优化任务
-##### 更多参考：
+#### 更多参考：
 - [CPU vs GPU vs TPU vs DPU vs QPU](https://www.bilibili.com/video/BV1S14y1k72N/?spm_id_from=333.337.search-card.all.click&vd_source=cebe69f84577caa5e4b4425764aef2cb)
 - [Ai Hardware](https://www.larksuite.com/en_us/topics/ai-glossary/ai-hardware) 
-#### Memory & Storage
+### Memory & Storage
 > - AI 模型进行训练和计算的时候，需要读取数据
 > - 能够迅速的读取数据，有助于模型快速的进行运算
 > - 一般来说，读取存放在 disk 内的数据时，需要以下几步：
@@ -109,13 +110,13 @@ tags: [中文]
 	- 主要制造商: [Link](https://us.metoree.com/categories/5443/)
 - Storage: SSD
 	- 主要制造商: [Link](https://us.metoree.com/categories/5508/)
-#### 未来发展方向
+### 未来发展方向
 - Quantum computing: 可以进行更复杂且迅速的运算
 - Edge computing: 在 Local devices （包括手机，IoT Devices，汽车等）上处理数据
 - 可持续 & energy-efficient designs: 切合全球可持续发展的目标
-### 中游：
+## 中游：平台层
 > 基于各类识别技术构建的软件产品、解决方案和技术平台
-#### 数字/信息安全
+### 数字/信息安全
 > 用 AI 来评估多个来源的海量数据，识别可能需要调查的异常行为
 
 - [Google Gemini](https://cloud.google.com/blog/products/ai-machine-learning/gemini-for-google-cloud-is-here): 主要用于服务器
@@ -123,29 +124,25 @@ tags: [中文]
 - [深信服安全GPT](https://www.securitygpt.com.cn/): 主要用于公司内网等区域网络
 	- 类似公司有：安恒信息、永信⾄诚、美亚柏科、绿盟科技、左江科技、科创信息、中孚信息、电科网安、中新赛克、奇安信  
 
-##### 更多参考
+#### 更多参考
 - [什么是网络安全 AI？](https://www.microsoft.com/zh-cn/security/business/security-101/what-is-ai-for-cybersecurity)
 
-#### 大模型
+### 大模型
 - [Large Language Models Explained](https://www.nvidia.com/en-us/glossary/large-language-models/)
 - 国外：[Link](https://zapier.com/blog/best-llm/)
 - 国内：[Link](http://www.cbdio.com/BigData/2024-02/01/content_6176476.htm)
 
-##### 更多参考
+#### 更多参考
 - [Hugging Face](https://huggingface.co/): 分享AI模型的平台
 - [Awesome-LLM](https://github.com/Hannibal046/Awesome-LLM): 关于大模型的一切资料
 
-### 下游：应用层
-#### 游戏
-> 个人Tips: AI在游戏行业的应用，主要由游戏开发商引入
-
+## 下游：应用层
+### 游戏
 - [天风证券-游戏产业人士看AI应用前景](https://pdf.dfcfw.com/pdf/H3_AP202310191602085337_1.pdf?1697724877000.pdf)
 - 解决方案：
 	- [AWS](https://aws.amazon.com/cn/campaigns/aigc/gaming/)
 	- 其他，没看太多，各大云服务商应该都有
-#### 医疗
-> 个人Tips: AI在医疗行业的应用，除了管理任务方向，其他方向都需要依据大量医疗数据
-
+### 医疗
 应用方向：
 - 处理门诊管理、人员管理等管理任务
 - 改进诊断
@@ -155,19 +152,7 @@ tags: [中文]
 - [AWS-生成式 AI 助力医疗健康与生命科学创新](https://aws.amazon.com/cn/campaigns/aigc/hcls/)
 - [Intel-医疗保健和生命科学领域中的人工智能](https://marketplace.intel.com/s/pmp-category/a5N3b000000L7SFEA0/solution?language=zh_CN&search=%7B%22q%22%3A%22%22%2C%22p%22%3A1%2C%22s%22%3A%22%22%2C%22f%22%3A%7B%22OfferingIndustries%22%3A%5B%22a5N3b000000L7SiEAK%22%2C%22a5N3b000000L7TKEA0%22%5D%7D%7D)
 
-#### 金融
-
-
-#### 教育
-
-#### 物流
-
-#### 音视频
-
-#### 安全
-
-
-#### 新媒体运营
+### 新媒体运营
 - 实现流程：
 	- [创新想法：AI赋能新媒体平台运营](https://www.woshipm.com/ai/1466006.html)
 - 现成产品:
@@ -175,27 +160,9 @@ tags: [中文]
 	- [AiDeep](https://www.aideep.com/product/operation)
 	- [昆仑万维](https://www.kunlun.com/index.html)
 
-  
-## 成熟AI产业公司及产品
-
-  
-  
-  
-
-## 产业链具有成长性市场性部分（代表公司及介绍）
-
-  
-  
-
-## 愿意从事产业部分
-
-  
-  
 
 ## 推荐书籍
 - [图解人工智能](https://github.com/Kensuke-Hinata/statistic/blob/master/AI/books/%E5%9B%BE%E8%A7%A3%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.pdf): 简单了解原理
-- 
-  
   
 
 ## References

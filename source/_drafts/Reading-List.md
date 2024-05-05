@@ -2,7 +2,7 @@
 title: Reading Lists
 date: 2023-10-11 16:35:18
 updated: 2023-10-11 16:35:18
-categories: Journal
+categories: Draft
 tags: [Reading]
 ---
 

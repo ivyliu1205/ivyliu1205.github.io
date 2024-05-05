@@ -5,7 +5,7 @@
 ### Create a new post
 
 ``` bash
-$ hexo new "My New Post"
+./controller.sh -c <title> post
 ```
 
 More info: [Writing](https://hexo.io/docs/writing.html)
@@ -15,18 +15,18 @@ More info: [Writing](https://hexo.io/docs/writing.html)
 ### Create a new draft
 
 ``` bash
-./scripts/controller.sh -c <title> draft
+./controller.sh -c <title> draft
 ```
 
 Check all files, including drafts: 
 ``` bash
-./scripts/controller.sh -r draft
+./controller.sh -r draft
 ```
 
 ### Publish a draft
 
 ``` bash
-./scripts/controller.sh -p <title>
+./controller.sh -p <title>
 ```
 
 ## Server
@@ -34,7 +34,7 @@ Check all files, including drafts:
 ### Run server
 
 ``` bash
-./scripts/controller.sh -r
+./controller.sh -r
 ```
 
 More info: [Server](https://hexo.io/docs/server.html)
@@ -42,7 +42,7 @@ More info: [Server](https://hexo.io/docs/server.html)
 ### Generate static files
 
 ``` bash
-./scripts/controller.sh -g
+./controller.sh -g
 ```
 
 More info: [Generating](https://hexo.io/docs/generating.html)
@@ -50,7 +50,7 @@ More info: [Generating](https://hexo.io/docs/generating.html)
 ### Deploy to remote sites
 
 ``` bash
-./scripts/controller.sh -d
+./controller.sh -d
 ```
 
 More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
