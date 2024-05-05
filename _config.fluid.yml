@@ -3,10 +3,20 @@
 
 # About Page
 about:
-  avatar: /img/avatar.png
-  name: "Fluid"
-  intro: "An elegant for Hexo"
+  avatar: /images/common/avatar.png
+  name: "Ivy(Yiting) Liu"
+  intro: "An Innovative Software Engineer"
   icons:
     - { class: 'iconfont icon-github-fill', link: 'https://github.com', tip: 'GitHub' }
-    - { class: 'iconfont icon-douban-fill', link: 'https://douban.com', tip: '豆瓣' }
-    - { class: 'iconfont icon-wechat-fill', qrcode: '/img/favicon.png' }
+    - { class: 'iconfont icon-linkedin-fill', link: 'https://www.linkedin.com/in/yiting-ivy-liu/', tip: 'LinkedIn' }
+    - { class: 'iconfont icon-wechat-fill', qrcode: '/images/common/WechatQR.jpg' }
+
+# Navigate Bar
+navbar:
+  blog_title: Ivy's Blog
+
+# Index Page
+index:
+  slogan:
+    enable: true
+    text: Welcome to Ivy's Blog
