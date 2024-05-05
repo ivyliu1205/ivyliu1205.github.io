@@ -20,3 +20,21 @@ index:
   slogan:
     enable: true
     text: Welcome to Ivy's Blog
+
+# Comments
+post:
+  comments:
+    enable: true
+    type: giscus
+giscus:
+  repo: ivyliu1205/ivyliu1205.github.io
+  repo-id: R_kgDOGmhpVg
+  category: General
+  category-id: DIC_kwDOGmhpVs4CfJ8p
+  mapping: title
+  reactions-enabled: 1
+  emit-metadata: 0
+  theme: light
+  lang: en
+  input-position: top
+  loading: lazy
