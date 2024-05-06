@@ -11,6 +11,8 @@ excerpt: "Topic: Landing your dream job"
 
 My first class and group class with Lingoda
 <!-- more -->
+Today was a trial class to help me determine whether or not to enroll in lingoda's sprint program. 
+
 
 {% note info %}
 **Topic**: Landing your dream job  
@@ -41,7 +43,7 @@ Betty bought butter but the butter was bitter, so Betty bought better butter to 
 
 ### Vocabularies & Phrases
 
-| Words                     | Meanings                                | Notes                                                                                                                                   |
+| V&P                     | Definiation                                | Note                                                                                                                                   |
 | ------------------------- | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | manage                    | v.	管理                                 | to watch of organise a job or an activity to make sure it is done correctly                                                             |
 | coordinate                | v.	协调                                 | to make different things work together as a whole                                                                                       |
@@ -77,7 +79,7 @@ There is a specific use of a must as a noun. It describes a condition to be fulf
 - Punctuality is *a must* in this job.
 - The show is fantastic. If you're in London, it's *a must*.
 
-
+{% note light %}
 There are three important points to remember about using **a must**.
 
 You can never start a sentence with **a must**. It always follows the thing to which it refers.  
@@ -88,6 +90,7 @@ You can never start a sentence with **a must**. It always follows the thing to w
 ✘ The must I talked about earlier.  
 Instead, the sentence would be rephrased:  
 ✓ The requirement I mentioned earlier.  
+{% endnote %}
 
 In the plural, it is possible to say **musts**, but more usual to keep to the singular **a must**.
 - Punctuality and reliability are *musts*.
@@ -96,6 +99,18 @@ In the plural, it is possible to say **musts**, but more usual to keep to the si
 ## Additional materials
 
 - [Games to learn English](https://www.gamestolearnenglish.com/?fbclid=IwAR395BlWNFOioWhsTZzzxvPXMm4Bu2RI9_LqS7-Smd1IrObaao_rrLjx1o0)
+
+## Review
+
+{% note success %}
+<span style="font-size:1.5em;">
+4.5/5
+<span>
+{% endnote %}
+
+The content of class material is quite comprehensive, covering communication, grammar, vocabulary and idiom. During the class, each student has the opportunity to speak. The teacher is very helpful and friendly, she is always patient and provides positive feedback. The experience of Lingoda's group class is excellent, so I decided to enroll in Lingoda's sprint program.
+
+Minus 0.5 points. It would be better if the teacher could correct the mistakes made by the students immediately.
 
 ## Resources
 - [Lecture: Landing your dream job](https://learn.lingoda.com/en/account/class/details/662df505a6538)
