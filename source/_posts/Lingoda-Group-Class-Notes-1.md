@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: Lingoda Group class notes 1
+title: Lingoda Group Class Notes 1
 date: 2024-05-05 17:11:15
 index_img: /images/common/language.png
 banner_img: /images/common/Lingoda_logo.png

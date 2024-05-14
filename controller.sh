@@ -82,7 +82,7 @@ case $1 in
         exit 0
         ;;
     -c|--create)
-        create "$3" "$2"
+        create "$3" $2
         exit 0
         ;;
     -d|--deploy)
