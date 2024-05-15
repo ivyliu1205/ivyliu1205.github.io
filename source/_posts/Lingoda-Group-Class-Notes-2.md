@@ -18,6 +18,7 @@ Before class, I hadn't realized that the word "check" in the topic title refered
 {% note info %}
 **Topic**: Check! Preparing for a job interview
 **Related skill**: Communication & Writing
+**Date**: 14 May 2024
 **Teacher**: Angela (South Africa)    
 **Classmates**:  
    - 1 from Norway
