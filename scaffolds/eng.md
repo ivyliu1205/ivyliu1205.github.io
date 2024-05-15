@@ -15,6 +15,7 @@ XXXXXXXXX
 {% note info %}
 **Topic**: XXX
 **Related skill**: XXXX  
+**Date**: 15 May 2024
 **Teacher**: XXX
 **Classmates**:  
    - 1 from XXX
