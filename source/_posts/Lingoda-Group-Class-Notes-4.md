@@ -97,4 +97,4 @@ The content of this class is a little bit hard for me, because I am really bad a
 
 ## Resources
 
-- [Learning materials](https://learn.lingoda.com/english/learning-materials/663b69cfebfe0/download)saszfr 
+- [Learning materials](https://learn.lingoda.com/english/learning-materials/663b69cfebfe0/download)
