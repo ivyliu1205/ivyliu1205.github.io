@@ -93,7 +93,7 @@ We can also call them modals of past probability.
 <span>
 {% endnote %}
 
-The content of this class is a little bit hard for me, because I am really bad at grammar. Ali's teaching style is slightly different from that of my previous teachers. He teaches every part on the learning materials but slightly changed the context of the exercises, which allows us to answer the questions more creativity. It's interesting and gives us more practice.
+The content of this class is a little bit hard for me, because I am really bad at grammar. Ali's teaching style is slightly different from that of my previous teachers. He teaches every part on the learning materials but slightly changed the context of the exercises, which allows us to answer the questions more creatively. It's interesting and gives us more practice.
 
 ## Resources
 
