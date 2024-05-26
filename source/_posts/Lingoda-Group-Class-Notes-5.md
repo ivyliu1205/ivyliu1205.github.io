@@ -54,7 +54,7 @@ updated: 2024-05-20 13:05:14
 | be water under the bridge   | 指过去发生的事情，现在已经不重要，不值得争论             | *I ended up forgiving my boyfriend for lying to me; it was all just water under the bridge.*                    |
 | take vengeance              | 报复                                            | *Her husband Mike was set on taking vengeance for being betrayed.*                                              |
 | cheat sb. out of sth.       | 骗取某人的某项东西                                       | To **cheat someone out of something** means to prevent someone from having something. e.g. a promotion or a reward. |
-| cheat on sb.                | 出轨                                                     | To **cheat on someone** means to be unfaithful to the person you are in a serious relationship with. ｜             |
+| cheat on sb.                | 出轨                                                     | To **cheat on someone** means to be unfaithful to the person you are in a serious relationship with.             |
 
 ### Quotations
 

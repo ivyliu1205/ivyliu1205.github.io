@@ -33,8 +33,8 @@ updated: 2024-05-21 12:09:03
 | ------------------------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | coincidence               | n. 巧合，同时发生；相符，一致；符合     | *Soon, they discovered some very strange coincidences*                                                            |
 | fatality                  | n. （灾难、事故中的）死亡；致命性；宿命 | *There was an increase in road fatalities this year.*                                                             |
-| dam                       | n. 水坝；v. （在河上）筑坝；阻止，抑制  | *It is of course very easy to laugh at the story of the small fish that endangered the great dam.*                |
-| flash flood               |                                         | *There were flash floods last spring due to heavy rainfall.*                                                      |
+| dam                       | n. 水坝；v.（在河上）筑坝；阻止，抑制   | *It is of course very easy to laugh at the story of the small fish that endangered the great dam.*                |
+| flash flood               | n.	（暴雨引起的）暴发洪水               | *There were flash floods last spring due to heavy rainfall.*                                                      |
 | anecdote                  | n. 轶事；秘史                           | *By sharing his own anecdotes behind English slang on his mini-blog, he's trying to make others laugh and learn.* |
 | biographical              | adj. 传记的                             | *I found a few links to past articles and some biographical details.*                                             |
 | narrative                 | n. 叙述; adj.叙述的；故事体的           | *He then told me that he would commence his narrative the next day when I should be at leisure.*                  |

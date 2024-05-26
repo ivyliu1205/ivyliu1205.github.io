@@ -9,9 +9,6 @@ categories: English Notes
 excerpt: "Topic: XXX"
 ---
 
-XXXXXXXXX
-<!-- more -->
-
 {% note info %}
 **Topic**: XXX
 **Related skill**: XXXX  
@@ -23,15 +20,13 @@ XXXXXXXXX
 
 ## What I've learned
 
-### Tougue Twisters
-
 ### Idioms
 
 ### Vocabularies & Phrases
 
-| V&P                     | Definiation                                | Note                                                                                                                                   |
-| ------------------------- | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| manage                    | v.	管理                                 | to watch of organise a job or an activity to make sure it is done correctly                                                             |
+|  V&P   | Definiation | Note  |
+| :----: | :---------: | :---: |
+| manage |   v.	管理   |       |
 
 ### Grammar
 
@@ -50,3 +45,4 @@ XXXXXXXXX
 XXXX
 
 ## Resources
+- [Learning material]()
