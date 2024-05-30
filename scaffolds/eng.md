@@ -14,8 +14,6 @@ excerpt: "Topic: XXX"
 **Related skill**: XXXX  
 **Date**: 15 May 2024
 **Teacher**: XXX
-**Classmates**:  
-   - 1 from XXX
 {% endnote %}
 
 ## What I've learned
@@ -26,7 +24,7 @@ excerpt: "Topic: XXX"
 
 |  V&P   | Definiation | Note  |
 | :----: | :---------: | :---: |
-| manage |   v.	管理   |       |
+| manage |             |       |
 
 ### Grammar
 
