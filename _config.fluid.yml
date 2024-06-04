@@ -1,31 +1,72 @@
 # Fluid Configuration
 ## Manual: https://hexo.fluid-dev.com/docs/guide/
+## References: https://github.com/fluid-dev/hexo-fluid-blog/blob/master/_config.fluid.yml
 
-# About Page
-about:
-  avatar: /images/common/avatar.png
-  name: "Ivy(Yiting) Liu"
-  intro: "An Innovative Software Engineer"
-  icons:
-    - { class: 'iconfont icon-github-fill', link: 'https://github.com', tip: 'GitHub' }
-    - { class: 'iconfont icon-linkedin-fill', link: 'https://www.linkedin.com/in/yiting-ivy-liu/', tip: 'LinkedIn' }
-    - { class: 'iconfont icon-wechat-fill', qrcode: '/images/common/WechatQR.jpg' }
+#---------------------------
+# 全局
+# Global
+#---------------------------
+# Icon for browser tab
+favicon: '/images/common/logo.png'
 
-# Navigate Bar
+# Icon for Apple touch
+apple_touch_icon: '/images/common/logo.png'
+
+# Lazy loading of images on the page
+lazyload:
+  enable: true
+  # 懒加载仅对文章页生效，开启后如果自定义页面需要使用，可以在 Front-matter 里指定 `lazyload: true`
+  # If true, only enable lazyload on the post page. For custom pages, you can set 'lazyload: true' in front-matter
+  onlypost: false
+
+#---------------------------
+# 页头
+# Header
+#---------------------------
 navbar:
   blog_title: Ivy's Blog
 
+#---------------------------
+# 页脚
+# Footer
+#---------------------------
+
+#---------------------------
+# 首页
 # Index Page
+#---------------------------
 index:
+  banner_img: '/images/common/index_bkg.jpg'
   slogan:
     enable: true
-    text: Welcome to Ivy's Blog
+    text: "Welcome to Ivy's 喜欢您来 ;)"
 
-# Comments
+#---------------------------
+# 文章页
+# Post Page
+#---------------------------
 post:
+  banner_img: '/images/common/default_bkg.jpeg'
+  default_index_img: '/images/common/post_index_default.jpeg'
+
+  # 文章标题下方的元信息
+  # Meta information below title
+  meta:
+    # 在文章开头显示文章更新时间，该时间默认是 md 文件更新时间，可通过 front-matter 中 `updated` 手动指定（和 date 一样格式）
+    # Update date is displayed at the beginning of the post. The default date is the update date of the md file, which can be manually specified by `updated` in front-matter (same format as date)
+    updated:
+      relative: true
+
+  # 文章下面的评论区
+  # Comments
   comments:
     enable: true
     type: giscus
+
+#---------------------------
+# 评论插件
+# Comment plugins: giscus
+#---------------------------
 giscus:
   repo: ivyliu1205/ivyliu1205.github.io
   repo-id: R_kgDOGmhpVg
@@ -38,3 +79,59 @@ giscus:
   lang: en
   input-position: top
   loading: lazy
+
+#---------------------------
+# 归档页
+# Archive Page
+#---------------------------
+archive:
+  banner_img: '/images/common/archives_pkg.jpeg'
+
+#---------------------------
+# 分类归档页
+# Categories Page
+#---------------------------
+category:
+  banner_img: '/images/common/category_bkg.png'
+
+#---------------------------
+# 标签归档页
+# Tags Page
+#---------------------------
+tag:
+  banner_img: '/images/common/tag_bkg.jpg'
+
+#---------------------------
+# 关于页
+# About Page
+#---------------------------
+about:
+  banner_img: '/images/common/about_bkg.jpg'
+  avatar: /images/common/avatar.png
+  name: "Ivy(Yiting) Liu"
+  intro: "An Innovative Software Engineer"
+  icons:
+    - { class: 'iconfont icon-github-fill', link: 'https://github.com', tip: 'GitHub' }
+    - { class: 'iconfont icon-linkedin-fill', link: 'https://www.linkedin.com/in/yiting-ivy-liu/', tip: 'LinkedIn' }
+    - { class: 'iconfont icon-wechat-fill', qrcode: '/images/common/WechatQR.jpg' }
+
+#---------------------------
+# 自定义页
+# Custom Page
+#
+# 通过 hexo new page 命令创建的页面
+# Custom Page through `hexo new page`
+#---------------------------
+
+#---------------------------
+# 404页
+# 404 Page
+#---------------------------
+page404:
+  enable: true
+  banner_img: '/images/common/404_bkg.jpeg'
+
+#---------------------------
+# 友链页
+# Links Page
+#---------------------------
