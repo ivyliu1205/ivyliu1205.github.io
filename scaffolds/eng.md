@@ -29,7 +29,7 @@ excerpt: "Topic: XXX"
 ### Grammar
 
 
-## Additional materials
+### Expressions
 
 
 ## Review
@@ -37,6 +37,12 @@ excerpt: "Topic: XXX"
 {% note success %}
 <span style="font-size:1.5em;">
 4.5/5
+<span>
+{% endnote %}
+
+{% note secondary %}
+<span style="font-size:1em;">
+Same teacher possibility: 30%
 <span>
 {% endnote %}
 
