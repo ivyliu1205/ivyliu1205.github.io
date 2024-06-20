@@ -17,6 +17,8 @@ updated: 2024-06-19 15:17:36
 **Teacher**: Desiree (South Africa)
 {% endnote %}
 
+![My new achievement!](../images/2024.06/lingoda_20.png)  
+
 ## What I've learned
 
 ### Idioms
