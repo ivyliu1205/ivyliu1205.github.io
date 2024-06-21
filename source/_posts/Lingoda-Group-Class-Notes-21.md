@@ -65,3 +65,19 @@ Christina was a different kind of teacher. She taught without strictly following
 
 ## Resources
 - [Learning material](https://learn.lingoda.com/english/learning-materials/66600bc1848ec/download)
+- https://www.cambridgeenglish.org/learning-english/activities-for-learners/?skill=pronunciation 
+- https://www.howmanysyllables.com/
+- https://www.englishclub.com/pronunciation/
+- https://www.englishclub.com/listening/
+- https://www.englishclub.com/grammar/prepositions.php
+- https://agendaweb.org
+- https://www.oxfordlearnersdictionaries.com/
+- https://www.englishclub.com/pronunciation/phonemic-chart-ia.php 
+- https://www.englisch-hilfen.de/en/exercises_list/prepositions.htm
+- https://www.english-grammar.at/online_exercises/prepositions/preposition-index.htm
+- https://agendaweb.org/grammar/prepositions-exercises.html
+- https://www.focus.olsztyn.pl/en-exercises-prepositions.html
+- https://test-english.com/grammar-points/a1/at-in-on-prepositions-time/ 
+- https://testbook.com/english-grammar/preposition-exercise 
+- https://www.masterclass.com/articles/barter-economy 
+- https://learnenglish.britishcouncil.org/sites/podcasts/files/LearnEnglish-Reading-B2-The-sharing-economy.pdf
