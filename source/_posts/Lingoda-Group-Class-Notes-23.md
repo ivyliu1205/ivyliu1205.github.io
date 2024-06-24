@@ -69,7 +69,7 @@ Same teacher possibility: 30%
 
 Francesca's introduction section was different from other classes. Instead of simply introducing ourselves, she had us introduce one of the most famous things from our hometown. I likeed this section. However, she didn't react much to our answers, which made me feel a little disappointed. Additionally, we had four students today, which was a large class. However, she was not very good at controlling the class. Whenever she asked a question, the class became a little chaotic. She also didn't give detailed and timely feedback, which was different from the teaching style I prefer. In another aspect, Francesca was a very friendly teacher.
 
-![Class Photo](../images/2024.06/lingoda_23.png)  
+![Class Photo](../images/2024.06/lingoda_23.jpg)  
 
 ## Resources
 - [Learning material](https://learn.lingoda.com/english/learning-materials/665d9c173dab4/download)
