@@ -12,7 +12,7 @@ excerpt: "Topic: XXX"
 {% note info %}
 **Topic**: XXX
 **Related skill**: XXXX  
-**Date**: 15 Aug 2024
+**Date**: 15 Sep 2024
 **Teacher**: XXX
 {% endnote %}
 
