@@ -90,6 +90,8 @@ Same teacher possibility: 100%
 
 The best teacher on Lingoda!!
 
+![Feedback from Teacher](../images/2024.12/lingoda_56_feedback.png)
+
 ## Resources
 - [Learning material](https://learn.lingoda.com/english/learning-materials/6748591bdce1b/source/download)
 

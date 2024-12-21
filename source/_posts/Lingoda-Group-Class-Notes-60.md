@@ -96,5 +96,7 @@ Same teacher possibility: 50%
 
 Joshua is an interested person to talk with.
 
+![Feedback from Teacher](../images/2024.12/lingoda_60_feedback.png)
+
 ## Resources
 - [Learning material](https://learn.lingoda.com/english/learning-materials/6749a42673733/download)

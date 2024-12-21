@@ -52,5 +52,7 @@ Same teacher possibility: 0%
 
 I don't like teachers who let students do group activities without providing guidance. Especially when the teacher doesn't teach anything to us before these activities.
 
+![Feedback from Teacher](../images/2024.12/lingoda_55_feedback.png)
+
 ## Resources
 - [Learning material](https://learn.lingoda.com/english/learning-materials/6740a44071e52/download)

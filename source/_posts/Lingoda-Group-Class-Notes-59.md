@@ -96,5 +96,7 @@ Same teacher possibility: 50%
 <span>
 {% endnote %}
 
+![Feedback from Teacher](../images/2024.12/lingoda_59_feedback.png)
+
 ## Resources
 - [Learning material](https://learn.lingoda.com/english/learning-materials/6749a1761ccb9/download)
