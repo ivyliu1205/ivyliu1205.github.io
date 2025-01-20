@@ -39,6 +39,27 @@ tags:
 
 ## Example questions & hints
 
+### Example 1
+
+![Example 1](/images/pte/DI1-Example-1.png)
+
+* So, this bar chart that we have here focuses on social media sites in 2012 to 2013.
+* Look at this chart. There are a bunch of things we can spot. Such as Facebook, LinkedIn and Pinterest.
+* Well, it's obvious that the maximum number is 71, which is related to Facebook in 2013.
+* After that, we can see the smallest values is 13, which is connected with Instagram in 2012.
+* Another significant thing is that the number of Pinterest shows the greatest increase, from 15 to 21.
+* Overall, Facebook is the most popular social media site.
+
+### Example 2
+
+![Example 2](/images/pte/DI1-Example-2.png)
+
+* Well, the given pie chart mainly talks about what determines happiness.
+* From this chart, it's obvious that the maximum number is 50%, which is related to genetic set point.
+* After that, intentional activities come in second, and it accounts for only 40% of our happiness.
+* In addition, I can spot that the percentage of live circumstances is a quarter of that of intentional activities, 10%.
+* In conclusion, most people believe that genetic set point determines half of one's happiness.
+
 ## References
 - [DI/RL防人工模板2.0来啦！（已考场实测过）](https://www.xiaohongshu.com/explore/6732bda5000000001b02ac8d?xsec_token=ABwoDO7PpZO6tBLQnA-p8UNJ968nGcD7i5lQi8QjL3_c0=&xsec_source=pc_search&source=unknown)
-- 
+- [熬夜整理的DI模板高频关键词，3h搞定](https://www.xiaohongshu.com/explore/6782312b0000000019034820?xsec_token=ABq3e--CJZcykVLZrYKZHYnyIZNrSpiWi8xSyEAf2_1UY=&xsec_source=pc_user&source=web_user_page)

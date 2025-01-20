@@ -48,6 +48,12 @@ index:
 post:
   banner_img: '/images/common/default_bkg.jpeg'
   default_index_img: '/images/common/post_index_default.jpeg'
+  
+  # 支持 LaTeX 数学公式
+  math:
+    enable: true
+    specific: false
+    engine: mathjax
 
   # 文章标题下方的元信息
   # Meta information below title

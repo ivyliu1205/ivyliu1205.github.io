@@ -2,8 +2,8 @@
 title: {{ title }}
 date: {{ date }}
 updated: {{ date }}
-index_img: /images/common/PTE_logo.png
-banner_img: /images/common/PTE_logo.png
+index_img: /images/coding/algorithm.jpeg
+banner_img: /images/coding/algorithm.jpeg
 excerpt: ..
 categories: Algorithms
 tags:
@@ -11,12 +11,34 @@ tags:
   - Data Structure
 ---
 
-## 
+## Definition
+{% note info %}
+XXX
+{% endnote %}
 
-## Template
+### Costs
+|        | Worst Case |
+| ------ | ---------- |
+| space  | $O(n * k)$   |
+| insert | O(k)       |
+| lookup | O(K)       |
 
-### Useful sentences
+### Suitable situation
 
-## Example questions & hints
+### Strength & Weaknesses
+
+**Strength:**
+- XX
+- XX
+
+**Weaknesses:**
+- XX
+- XX
+
+## Relevant Coding Questions
+
+
+## Similar Data Structures
+
 
 ## References

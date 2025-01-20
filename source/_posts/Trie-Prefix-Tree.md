@@ -18,9 +18,9 @@ The **Trie data structure** is a tree-like data structure used to efficiently **
 ### Costs
 |        | Worst Case |
 | ------ | ---------- |
-| space  | O(n * k)   |
-| insert | O(k)       |
-| lookup | O(K)       |
+| space  | $O(n * k)$   |
+| insert | $O(k)$       |
+| lookup | $O(K)$       |
 
 ### Suitable situation
 - Tries are useful where you have a fixed dictionary you want to look up quickly
