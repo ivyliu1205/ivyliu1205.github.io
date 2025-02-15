@@ -11,10 +11,10 @@ updated: 2024-11-22 21:29:20
 ---
 
 {% note info %}
-**Topic**: Neighbourhoods around the world
+**Topic**: Neighbourhoods around the world  
 **Related skill**: Communication  
-**Date**: 22 November 2024
-**Teacher**: Elizabeth
+**Date**: 22 November 2024  
+**Teacher**: Elizabeth  
 {% endnote %}
 
 ## What I've learned

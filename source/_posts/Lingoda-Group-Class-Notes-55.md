@@ -11,10 +11,10 @@ updated: 2024-12-06 20:43:34
 ---
 
 {% note info %}
-**Topic**: Music cultures
-**Related skill**: Reading  
-**Date**: 6 December 2024
-**Teacher**: Jennifer
+**Topic**: Music cultures  
+**Related skill**: Reading    
+**Date**: 6 December 2024  
+**Teacher**: Jennifer  
 {% endnote %}
 
 ## What I've learned

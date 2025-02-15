@@ -11,18 +11,19 @@ updated: 2024-12-23 18:47:57
 ---
 
 {% note info %}
-**Topic**: Telling an anecdote
-**Related skill**: Communication  
-**Date**: 23 December 2024
-**Teacher**: Tanycia
+* **Topic**: Telling an anecdote
+* **Related skill**: Communication  
+* **Date**: 23 December 2024
+* **Teacher**: Tanycia
 {% endnote %}
 
 ## What I've learned
 
 ### Idioms
-**to make a long story short**
-- **Meaning**: to get to the point – to leave out any unnecessary details 
-- **Example**: *Anyway, **to make a long story short**, I missed my flight and had to pay €400 to get home!*
+**to make a long story short**  
+
+* **Meaning**: to get to the point – to leave out any unnecessary details  
+* **Example**: *Anyway, **to make a long story short**, I missed my flight and had to pay €400 to get home!*
 
 ### Vocabularies & Phrases
 

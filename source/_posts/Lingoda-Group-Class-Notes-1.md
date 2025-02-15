@@ -17,7 +17,7 @@ Today was a trial class to help me determine whether or not to enroll in lingoda
 {% note info %}
 **Topic**: Landing your dream job  
 **Related skill**: Communication  
-**Date**: 5 May 2024
+**Date**: 5 May 2024  
 **Teacher**: Tiffany (South Africa)    
 **Classmates**:  
    - 1 from China

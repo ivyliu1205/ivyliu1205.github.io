@@ -16,11 +16,11 @@ Sprint START! My second group class with Lingoda.
 Before class, I hadn't realized that the word "check" in the topic title refered to a summary of the previous full chapter. Even though I hadn't finished the entire chapter, I still completed the class successfully. Thanks to the teacher.
 
 {% note info %}
-**Topic**: Check! Preparing for a job interview
-**Related skill**: Communication & Writing
-**Date**: 14 May 2024
-**Teacher**: Angela (South Africa)    
-**Classmates**:  
+**Topic**: Check! Preparing for a job interview  
+**Related skill**: Communication & Writing  
+**Date**: 14 May 2024  
+**Teacher**: Angela (South Africa)     
+**Classmates**:   
    - 1 from Norway
    - 1 from German
 {% endnote %}

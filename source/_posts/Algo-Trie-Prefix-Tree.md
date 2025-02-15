@@ -84,7 +84,7 @@ A radix tree is like a trie, but it saves space by combining nodes together if t
 
 Here's what a radix tree with *"Maria"*, *"Mariana"*, and *"David"* looks like.
 
-![Radix Tree](../images/coding/radix_tree.png)
+![Radix Tree](/images/coding/radix_tree.png)
 
 The radix tree with "MARIA", "MARIANA", and "DAVID" where the first node is empty and directs to the children nodes "David" and "Maria", and "Maria" has one children node which contains "NA".
 Notice how it has way fewer nodes and links than the trie version we looked at above.

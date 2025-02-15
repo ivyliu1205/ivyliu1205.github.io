@@ -14,10 +14,10 @@ updated: 2024-05-15 16:01:53
 <!-- more -->
 
 {% note info %}
-**Topic**: Are zoos morally right?
+**Topic**: Are zoos morally right?  
 **Related skill**: Communication  
-**Date**: 15 May 2024
-**Teacher**: Danielle (South Africa)
+**Date**: 15 May 2024  
+**Teacher**: Danielle (South Africa)  
 **Classmates**:  
    - 1 from Korea
    - 1 from XXX (I missed)
