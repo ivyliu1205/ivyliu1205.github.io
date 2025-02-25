@@ -20,8 +20,8 @@ XXX
 |        | Worst Case |
 | ------ | ---------- |
 | space  | $O(n * k)$   |
-| insert | O(k)       |
-| lookup | O(K)       |
+| insert | $O(k)$       |
+| lookup | $O(K)$       |
 
 ### Suitable situation
 
