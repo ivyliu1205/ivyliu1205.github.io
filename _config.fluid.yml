@@ -115,7 +115,7 @@ about:
   banner_img: '/images/common/about_bkg.jpg'
   avatar: /images/common/avatar.png
   name: "Ivy(Yiting) Liu"
-  intro: "An Innovative Software Engineer"
+  intro: "Software Engineer @ Amazon"
   icons:
     - { class: 'iconfont icon-github-fill', link: 'https://github.com', tip: 'GitHub' }
     - { class: 'iconfont icon-linkedin-fill', link: 'https://www.linkedin.com/in/yiting-ivy-liu/', tip: 'LinkedIn' }

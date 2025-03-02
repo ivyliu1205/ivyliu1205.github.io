@@ -59,8 +59,13 @@ To achieve a monotonic decreasing stack, you can follow these step-by-step appro
 
 ### Suitable situation
 
-- Finding the next greater element
-- Finding the next smaller element
+{% note info %}
+**Tips**
+如果要找"更X的元素"，就用与X相反的单调性质的栈
+{% endnote %}
+
+- Finding the next greater element: Monotonic Decreasing Stack
+- Finding the next smaller element: Monotonic Increasing Stack
 - ...
 
 ### Strength & Weaknesses

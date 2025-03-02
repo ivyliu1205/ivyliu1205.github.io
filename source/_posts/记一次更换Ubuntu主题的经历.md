@@ -2,7 +2,7 @@
 title: 记一次更换Ubuntu主题的经历
 date: 2023-10-07 11:23:44
 updated: 2023-10-07 11:23:44
-categories: Technical Journal
+categories: Technical Journals
 tags: [中文, Ubuntu]
 ---
 
@@ -32,7 +32,7 @@ GNOME Shell: 3.36.9
 
 **第一种**: 应用商店搜索 <span class="label label-default">GNOME Tweaks</span> - 下载安装 
 
-![picture 3](../images/2023.10.07/312c81ab898c0cb667be5cacfef7b316834c65910a1b5bdc766e71f434893ae7.png "应用商店内截图")  
+![picture 3](/images/2023.10.07/312c81ab898c0cb667be5cacfef7b316834c65910a1b5bdc766e71f434893ae7.png "应用商店内截图")  
 
 **第二种**: 使用命令行（*我使用的方法*）
 
@@ -44,15 +44,15 @@ sudo apt-get install gnome-tweak-tool
 安装完成之后，就可以从应用程序列表里打开它了
 
 图标长这样:
-![picture 6](../images/2023.10.07/ff15f42505cc96746788670f62ea84ff6cb9a6cf14f7e8082fb6afc158a4314e.png "Tweaks 图标")  
+![picture 6](/images/2023.10.07/ff15f42505cc96746788670f62ea84ff6cb9a6cf14f7e8082fb6afc158a4314e.png "Tweaks 图标")  
 
 打开之后，长这样:
-![picture 4](../images/2023.10.07/c3ecd67e2599c420cef1c566c7930df727792c97a6c2909ce0efd49a28da305d.png "Tweaks 内截图")  
+![picture 4](/images/2023.10.07/c3ecd67e2599c420cef1c566c7930df727792c97a6c2909ce0efd49a28da305d.png "Tweaks 内截图")  
 
 ## Step 2: 安装 `User themes` 扩展工具
 
 在 `Gnome Tweaks` 里打开 `Appearance` 后，可能会发现 `Themes` - `Shell` 那里有个感叹号，这是因为没有安装更换主题需要的扩展工具 (Extension)
-![picture 5](../images/2023.10.07/3fabd698105dc33b0f21698d7ba9d58592434fbb9068354d549dc3574d8a3e3a.png "感叹号示意图")  
+![picture 5](/images/2023.10.07/3fabd698105dc33b0f21698d7ba9d58592434fbb9068354d549dc3574d8a3e3a.png "感叹号示意图")  
 
 **第一步**: 安装支持扩展工具 (Extension) 的工具
 
@@ -61,7 +61,7 @@ sudo apt-get install gnome-shell-extensions
 ```
 
 安装完成之后，会出现一个这样的图标:
-![picture 7](../images/2023.10.07/d891f36ea2400985b13ab2b4d5e12c770b50aa901d00a39d8050f3dab1176376.png "Extensions 图标")
+![picture 7](/images/2023.10.07/d891f36ea2400985b13ab2b4d5e12c770b50aa901d00a39d8050f3dab1176376.png "Extensions 图标")
 
 这个图标点开之后，和从 `Tweaks` 打开的 `Extensions` 页面一样
 
@@ -85,7 +85,7 @@ sudo apt-get install chrome-gnome-shell
 - 通过浏览器找到 [User Themes Extension](https://extensions.gnome.org/extension/19/user-themes/)
 - 把 `OFF` 调成 `ON`
 
-    ![picture 8](../images/2023.10.07/66cbcbe4fde0d695fb8898f5dc427c39bbd5c4f029f9206f1eea71c48d7e3e6a.png "开关示意图")  
+    ![picture 8](/images/2023.10.07/66cbcbe4fde0d695fb8898f5dc427c39bbd5c4f029f9206f1eea71c48d7e3e6a.png "开关示意图")  
 
 {% note success %}
 **TIP**
@@ -101,7 +101,7 @@ sudo apt-get install chrome-gnome-shell
 
 最后，回到 `Tweaks` 里的 `Appearance` 页面，发现 `Shell` 一栏可以调整了
 
-![picture 10](../images/2023.10.07/112403c7a8897d83d8c9eb88c191df435982d9897e971c658e3d77993a2379ab.png "可以调整示意图")  
+![picture 10](/images/2023.10.07/112403c7a8897d83d8c9eb88c191df435982d9897e971c658e3d77993a2379ab.png "可以调整示意图")  
 
 大功告成！🍻
 
@@ -120,9 +120,9 @@ sudo apt-get install chrome-gnome-shell
 **第一步**: 下载主题压缩包
 找到最右边的 `Download`, 它下面会有很多不同的主题包，可以都下载下来一个一个试试看
 
-![picture 11](../images/2023.10.07/42a60af0a055f333f4b3cbe2b8d6837ab9c19cf32986cad3299a575521968dd6.png "主题详情页")  
+![picture 11](/images/2023.10.07/42a60af0a055f333f4b3cbe2b8d6837ab9c19cf32986cad3299a575521968dd6.png "主题详情页")  
 
-![picture 12](../images/2023.10.07/8a04c26c05d505769a55aae770e38f514c34d5a894cd8887506726e7853c64c5.png "主题下载页")  
+![picture 12](/images/2023.10.07/8a04c26c05d505769a55aae770e38f514c34d5a894cd8887506726e7853c64c5.png "主题下载页")  
 
 **第二步**: 解压压缩包
 

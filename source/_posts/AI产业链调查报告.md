@@ -1,6 +1,6 @@
 ---
 title: AI产业链调查报告
-categories: Technical Journal
+categories: Technical Journals
 date: 2024-05-01 11:04:05
 updated: 2024-05-01 11:04:05
 tags: [中文, AI]
@@ -12,21 +12,22 @@ excerpt: "一个简单的AI产业链调查"
 
 ## 上游：硬件层
 > 包括：芯片、算力、半导体、CPO、光模块等关键技术领域
+
 ### Semiconductor: 半导体
-> - 一种介于导体和绝缘体中间的物质, 基础材料是硅  
-> - 由四个组成部分组成  
-	- 集成电路 (Integrated circuit): 占 80% +  
+> 一种介于导体和绝缘体中间的物质, 基础材料是硅, 由四个组成部分组成  
+	- 集成电路 (Integrated circuit): 占 80%+  
 	- 光电器件  
 	- 分立器件  
 	- 传感器  
-> - 其中集成电路：分为以下四类（也统称为芯片 Chip）  
+
+> 其中集成电路：分为以下四类（也统称为芯片 Chip）  
 	- 微处理器  
 	- 存储器  
 	- 逻辑器件  
 	- 模拟器件  
 
-全球：
-根据TechInsights报告显示，2023年全球TOP25半导体公司分别为:
+**全球**：根据TechInsights报告显示，2023年全球TOP25半导体公司分别为:  
+
 - 台积电（TSMC）
 - 英特尔（Intel）
 - 英伟达（NVIDIA）
@@ -53,17 +54,18 @@ excerpt: "一个简单的AI产业链调查"
 - 中芯国际（SMIC）
 - 西部数据（Kioxia）
 
-大陆：
-![s](https://img.36krcdn.com/hsossms/20240320/v2_db558fcf5e9e4696bb5734e00f6ce685@000000_oswg1033349oswg1080oswg3165_img_000?x-oss-process=image/format,jpg/interlace,1/format,jpg/interlace,1/format,jpg/interlace,1)
+**大陆**：
+![Pic 1](https://img.36krcdn.com/hsossms/20240320/v2_db558fcf5e9e4696bb5734e00f6ce685@000000_oswg1033349oswg1080oswg3165_img_000?x-oss-process=image/format,jpg/interlace,1/format,jpg/interlace,1/format,jpg/interlace,1)
 
 ### Optical Module: 光模块
-光模块链路：
-![a](https://img.36krcdn.com/hsossms/20231019/v2_775777ba9bf54ddfa6278a176aa93b7d@5967662_oswg181110oswg1080oswg439_img_000?x-oss-process=image/format,jpg/interlace,1/format,jpg/interlace,1/format,jpg/interlace,1/format,jpg/interlace,1/format,jpg/interlace,1)
+**光模块链路**：
+![Pic 2](https://img.36krcdn.com/hsossms/20231019/v2_775777ba9bf54ddfa6278a176aa93b7d@5967662_oswg181110oswg1080oswg439_img_000?x-oss-process=image/format,jpg/interlace,1/format,jpg/interlace,1/format,jpg/interlace,1/format,jpg/interlace,1/format,jpg/interlace,1)
 
 #### 更多参考
 - [英伟达吃肉，光模块喝汤？](https://36kr.com/p/2480834050072704)
 - [Introduction And Application Of Optical Modules](https://www.researchhub.com/post/1998/introduction-and-application-of-optical-modules)
 - [清晰明了！10分钟讲懂光模块【深度报告】](https://www.bilibili.com/video/BV1aN41117K1/?spm_id_from=333.337.search-card.all.click&vd_source=cebe69f84577caa5e4b4425764aef2cb)
+
 ### Processors: 处理器, 核心是芯片
 > - 为AI提供算力, 每种处理器擅长处理的计算不一样，需要按照AI项目的需要选择
 > - 处理器的不同主要由芯片来决定
@@ -94,9 +96,11 @@ excerpt: "一个简单的AI产业链调查"
 		- Nvidia: BlusField系列
 - QPU: 量子处理器（发展前景大，但目前无成熟产品）
 	- QPU是用于执行量子计算的处理器。与传统的计算机架构不同，量子计算利用量子力学原理，以量子比特（qubit）作为计算的基本单位。QPU能够处理和操作量子态，执行特定的量子算法，以解决某些问题中的复杂计算和优化任务
+
 #### 更多参考：
 - [CPU vs GPU vs TPU vs DPU vs QPU](https://www.bilibili.com/video/BV1S14y1k72N/?spm_id_from=333.337.search-card.all.click&vd_source=cebe69f84577caa5e4b4425764aef2cb)
 - [Ai Hardware](https://www.larksuite.com/en_us/topics/ai-glossary/ai-hardware) 
+
 ### Memory & Storage
 > - AI 模型进行训练和计算的时候，需要读取数据
 > - 能够迅速的读取数据，有助于模型快速的进行运算
@@ -110,12 +114,15 @@ excerpt: "一个简单的AI产业链调查"
 	- 主要制造商: [Link](https://us.metoree.com/categories/5443/)
 - Storage: SSD
 	- 主要制造商: [Link](https://us.metoree.com/categories/5508/)
+
 ### 未来发展方向
 - Quantum computing: 可以进行更复杂且迅速的运算
 - Edge computing: 在 Local devices （包括手机，IoT Devices，汽车等）上处理数据
 - 可持续 & energy-efficient designs: 切合全球可持续发展的目标
+
 ## 中游：平台层
 > 基于各类识别技术构建的软件产品、解决方案和技术平台
+
 ### 数字/信息安全
 > 用 AI 来评估多个来源的海量数据，识别可能需要调查的异常行为
 
