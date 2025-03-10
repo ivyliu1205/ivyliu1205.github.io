@@ -11,9 +11,9 @@ updated: 2024-12-17 22:02:32
 ---
 
 {% note info %}
-**Topic**: Let’s talk about travel and tourism!
+**Topic**: Let’s talk about travel and tourism!  
 **Related skill**: Speaking  
-**Date**: 17 December 2024
+**Date**: 17 December 2024  
 **Teacher**: Angelina
 {% endnote %}
 
@@ -21,6 +21,7 @@ updated: 2024-12-17 22:02:32
 
 ### Idioms
 **to get away from it all**
+
 - **Meaning**: to have a short holiday in a place where you can relax (informal)
 - **Example**: *I can’t wait to **get away from it all** while I’m in Canada next week.*
 
@@ -62,7 +63,7 @@ Same teacher possibility: 5![Feedback from Teacher](../images/2024.12/lingoda_63
 <span>
 {% endnote %}
 
-![Feedback from Teacher](../images/2024.12/lingoda_61_feedback.png)
+![Feedback from Teacher](/images/2024.12/lingoda_61_feedback.png)
 
 ## Resources
 - [Learning material](https://learn.lingoda.com/english/learning-materials/6759c1aee8124/download)

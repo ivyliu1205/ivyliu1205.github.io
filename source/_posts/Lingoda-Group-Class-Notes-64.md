@@ -11,16 +11,17 @@ updated: 2024-12-22 16:49:16
 ---
 
 {% note info %}
-**Topic**: Expressing feelings
-**Related skill**: Communication  
-**Date**: 22 December 2024
-**Teacher**: Rachel
+**Topic**: Expressing feelings  
+**Related skill**: Communication    
+**Date**: 22 December 2024  
+**Teacher**: Rachel  
 {% endnote %}
 
 ## What I've learned
 
 ### Idioms
 **to wear your heart on your sleeve**
+
 - **Meaning**: to allow your feelings to be seen by others.
 - **Example**: *Eric is one to **wear his heart on his sleeve**. We always know how he’s feeling!*
 
@@ -97,7 +98,7 @@ Same teacher possibility: 50%
 <span>
 {% endnote %}
 
-![Feedback from Teacher](../images/2024.12/lingoda_64_feedback.png)
+![Feedback from Teacher](/images/2024.12/lingoda_64_feedback.png)
 
 ## Resources
 - [Learning material](https://learn.lingoda.com/english/learning-materials/674af729d6628/source/download)

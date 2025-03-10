@@ -11,9 +11,9 @@ updated: 2024-12-15 17:51:45
 ---
 
 {% note info %}
-**Topic**: The rise of documentary-making
+**Topic**: The rise of documentary-making  
 **Related skill**: Communication  
-**Date**: 15 December 2024
+**Date**: 15 December 2024  
 **Teacher**: Joshua
 {% endnote %}
 
@@ -21,6 +21,7 @@ updated: 2024-12-15 17:51:45
 
 ### Idioms
 **That’s a wrap!**
+
 - **Meaning**: The phrase comes from film-making – it means that a scene is completed. We use
 it to say that something is finished or complete. 
 - **Example**: *(After a meeting) Ok, **that’s a wrap!** Great job, guys.*
@@ -96,7 +97,7 @@ Same teacher possibility: 50%
 
 Joshua is an interested person to talk with.
 
-![Feedback from Teacher](../images/2024.12/lingoda_60_feedback.png)
+![Feedback from Teacher](/images/2024.12/lingoda_60_feedback.png)
 
 ## Resources
 - [Learning material](https://learn.lingoda.com/english/learning-materials/6749a42673733/download)

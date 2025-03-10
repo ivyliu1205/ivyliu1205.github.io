@@ -11,16 +11,17 @@ updated: 2024-12-13 20:57:04
 ---
 
 {% note info %}
-**Topic**: Cryptocurrency
+**Topic**: Cryptocurrency  
 **Related skill**: Reading  
-**Date**: 13 December 2024
-**Teacher**: Wayne
+**Date**: 13 December 2024  
+**Teacher**: Wayne  
 {% endnote %}
 
 ## What I've learned
 
 ### Idioms
 **the other side of the coin**
+
 - **Meaning**: a different way of seeing a situation, making it seem better or worse than before.
 - **Example**: *Bitcoin succeeded in disrupting the banking sector. However, **the other side of the coin** is that it brought some serious environmental issues with it.*
 

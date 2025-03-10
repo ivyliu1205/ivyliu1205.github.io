@@ -11,16 +11,17 @@ updated: 2024-12-21 17:50:54
 ---
 
 {% note info %}
-**Topic**: E-sports
+**Topic**: E-sports  
 **Related skill**: Reading  
-**Date**: 21 December 2024
-**Teacher**: Maria
+**Date**: 21 December 2024  
+**Teacher**: Maria  
 {% endnote %}
 
 ## What I've learned
 
 ### Idioms
 **to give the game away**
+
 - **Meaning**: to reveal a secret or a plan, often unintentionally
 - **Example**: *I interrupted him before he **gave the game away**!*
 
@@ -66,8 +67,6 @@ E-sports have been around since the 1990s, but it is only in recent years that t
 Same teacher possibility: 50%
 <span>
 {% endnote %}
-
-![Feedback from Teacher](../images/2024.12/lingoda_63_feedback.png)
 
 ## Resources
 - [Learning material](https://learn.lingoda.com/english/learning-materials/67584e846cd5e/source/download)

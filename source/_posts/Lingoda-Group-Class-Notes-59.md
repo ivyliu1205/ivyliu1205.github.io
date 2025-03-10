@@ -11,9 +11,9 @@ updated: 2024-12-14 17:55:10
 ---
 
 {% note info %}
-**Topic**: Advanced verb patterns
-**Related skill**: Grammar  
-**Date**: 14 December 2024
+**Topic**: Advanced verb patterns   
+**Related skill**: Grammar    
+**Date**: 14 December 2024  
 **Teacher**: Gladys
 {% endnote %}
 
@@ -21,6 +21,7 @@ updated: 2024-12-14 17:55:10
 
 ### Idioms
 **to think highly of someone or something**
+
 - **Meaning**: to have a very positive opinion of someone or something.
 - **Example**: *I **think very highly of** Margaret’s advice. She always has great suggestions!*
 
@@ -96,7 +97,7 @@ Same teacher possibility: 50%
 <span>
 {% endnote %}
 
-![Feedback from Teacher](../images/2024.12/lingoda_59_feedback.png)
+![Feedback from Teacher](/images/2024.12/lingoda_59_feedback.png)
 
 ## Resources
 - [Learning material](https://learn.lingoda.com/english/learning-materials/6749a1761ccb9/download)

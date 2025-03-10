@@ -11,10 +11,10 @@ updated: 2024-12-23 18:47:57
 ---
 
 {% note info %}
-* **Topic**: Telling an anecdote
+* **Topic**: Telling an anecdote  
 * **Related skill**: Communication  
-* **Date**: 23 December 2024
-* **Teacher**: Tanycia
+* **Date**: 23 December 2024  
+* **Teacher**: Tanycia  
 {% endnote %}
 
 ## What I've learned

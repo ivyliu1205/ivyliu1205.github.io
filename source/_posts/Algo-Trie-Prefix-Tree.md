@@ -26,13 +26,16 @@ The **Trie data structure** is a tree-like data structure used to efficiently **
 - Tries are useful where you have a fixed dictionary you want to look up quickly
 
 ### Strength & Weaknesses
-**Strength:**
+
+**Strength:**  
+
 - Sometimes **Space-Efficient**: If you're storing lots of words that start with similar patterns, tries may reduce the overall storage cost by storing shared prefixes once.
 - **Efficient Prefix Queries**: Can do sub string searching in linear time, without pre processing the string every time. Tries also can quickly answer queries about words with shared prefixes, like:
   - How many words start with "choco"?
   - What's the most likely next letter in a word that starts with "strawber"?
 
-**Weaknesses:**
+**Weaknesses:**  
+
 - Usually **Space-Inefficient**: Tries rarely save space when compared to storing strings in a set.
 - **Not Standard**: Most languages don't come with a built-in trie implementation. You'll need to implement one yourself.
 

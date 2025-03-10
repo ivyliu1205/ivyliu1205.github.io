@@ -2,7 +2,7 @@
 title: {{ title }}
 date: {{ date }}
 updated: {{ date }}
-index_img: /images/2024.12/lingoda_40.png
+index_img: /images/2025.03/lingoda_40.png
 banner_img: /images/common/Lingoda_logo.png
 tags: [Lingoda]
 categories: English Notes
@@ -10,16 +10,17 @@ excerpt: "Topic: XXX"
 ---
 
 {% note info %}
-**Topic**: XXX
-**Related skill**: XXXX  
-**Date**: 15 December 2024
-**Teacher**: XXX
+**Topic**: XXX  
+**Related skill**: XXXX   
+**Date**: 15 March 2025  
+**Teacher**: XXX  
 {% endnote %}
 
 ## What I've learned
 
 ### Idioms
 **AA**
+
 - **Meaning**: 
 - **Example**: *A*
 

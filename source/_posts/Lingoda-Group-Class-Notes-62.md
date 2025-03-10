@@ -11,9 +11,9 @@ updated: 2024-12-19 20:52:51
 ---
 
 {% note info %}
-**Topic**: Do you believe in karma
+**Topic**: Do you believe in karma  
 **Related skill**: Reading  
-**Date**: 19 December 2024
+**Date**: 19 December 2024  
 **Teacher**: Ali
 {% endnote %}
 
@@ -21,6 +21,7 @@ updated: 2024-12-19 20:52:51
 
 ### Idioms
 **to kill someone with kindness**
+
 - **Meaning**: to be so kind to someone that you cause discomfort
 - **Example**: *My ex-boyfriend would always **kill me with kindness**. It only made things worse!*
 
@@ -62,7 +63,7 @@ Same teacher possibility: 50%
 <span>
 {% endnote %}
 
-![Feedback from Teacher](../images/2024.12/lingoda_62_feedback.png)
+![Feedback from Teacher](/images/2024.12/lingoda_62_feedback.png)
 
 ## Resources
 - [Learning material](https://learn.lingoda.com/english/learning-materials/673223ca76333/download)

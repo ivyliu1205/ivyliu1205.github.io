@@ -5,22 +5,23 @@ banner_img: /images/common/Lingoda_logo.png
 tags:
   - Lingoda
 categories: English Notes
-excerpt: 'Topic: Lingoda-Group-Class-Notes-56.md'
+excerpt: 'Topic: Social Media'
 date: 2024-12-07 18:45:32
 updated: 2024-12-07 18:45:32
 ---
 
 {% note info %}
-**Topic**: Lingoda-Group-Class-Notes-56.md
-**Related skill**: Communication  
-**Date**: 7 December 2024
-**Teacher**: E. Claire
+**Topic**: Social Media  
+**Related skill**: Communication   
+**Date**: 7 December 2024  
+**Teacher**: E. Claire  
 {% endnote %}
 
 ## What I've learned
 
 ### Idioms
 **social butterfly**
+
 - **Meaning**: an outgoing person who is charming and charismatic
 - **Example**: *Sue is such a **social butterfly**! Everyone adores her!*
 
@@ -39,9 +40,9 @@ updated: 2024-12-07 18:45:32
 To draw a comparison between two things we see as being alike, we use qualifiers like **both (and)**, particles like **also** and **too**, and the adjectival phrases **similar to** or **like**.
 
 {% note info %}
-**Both** Instagram and Twitter are picture-heavy.
-Facebook has had a lot of bad press. Twitter is **also** coming under fire. TikTok, **too**, is facing criticism.
-The way posts spread on social networks is **similar to/like** how rumours spread in the playground.
+* **Both** Instagram and Twitter are picture-heavy.  
+* Facebook has had a lot of bad press. Twitter is **also** coming under fire. TikTok, **too**, is facing criticism.  
+* The way posts spread on social networks is **similar to/like** how rumours spread in the playground.
 {% endnote %}
 
 **Both** can be used as a qualifier (i.e. followed by nouns) or on its own as pronoun (i.e. replacing nouns).
@@ -67,9 +68,9 @@ TicToc is facing criticism, **too**.
 To highlight a contrast, we use **unlike** and conjunctions such as **while** or **whereas**.
 
 {% note info %}
-In the end, Twitter blocked Donald Trump - **unlike** many other networks.
-**Whereas** adults have the emotional maturity to process social media, young children are not yet ready for it.
-**While** many have turned away from Facebook in recent years, some users remain loyal.
+* In the end, Twitter blocked Donald Trump - **unlike** many other networks.
+* **Whereas** adults have the emotional maturity to process social media, young children are not yet ready for it.
+* **While** many have turned away from Facebook in recent years, some users remain loyal.
 {% endnote %}
 
 When used for contrasting effect, **while** and **whereas** generally begin sentences.
@@ -90,7 +91,7 @@ Same teacher possibility: 100%
 
 The best teacher on Lingoda!!
 
-![Feedback from Teacher](../images/2024.12/lingoda_56_feedback.png)
+![Feedback from Teacher](/images/2024.12/lingoda_56_feedback.png)
 
 ## Resources
 - [Learning material](https://learn.lingoda.com/english/learning-materials/6748591bdce1b/source/download)

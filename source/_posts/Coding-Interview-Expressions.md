@@ -1,12 +1,12 @@
 ---
 title: Coding Interview Expressions
-index_img: /images/coding/algorithm.jpeg
-banner_img: /images/coding/algorithm.jpeg
+index_img: /images/programming/program.png
+banner_img: /images/programming/program.png
 excerpt: Expressions commonly used in coding interviews
-categories: Algorithms
+categories: Programming
 tags:
   - Coding
-  - Job Interview
+  - Interview
 date: 2025-02-16 15:35:27
 updated: 2025-02-16 15:35:27
 ---
