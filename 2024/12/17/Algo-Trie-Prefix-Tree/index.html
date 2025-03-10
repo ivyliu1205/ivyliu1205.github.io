@@ -317,20 +317,29 @@ systems</strong>.</p>
 up quickly</li>
 </ul>
 <h3 id="strength-weaknesses">Strength &amp; Weaknesses</h3>
-<p><strong>Strength:</strong> - Sometimes
-<strong>Space-Efficient</strong>: If you're storing lots of words that
-start with similar patterns, tries may reduce the overall storage cost
-by storing shared prefixes once. - <strong>Efficient Prefix
-Queries</strong>: Can do sub string searching in linear time, without
-pre processing the string every time. Tries also can quickly answer
-queries about words with shared prefixes, like: - How many words start
-with "choco"? - What's the most likely next letter in a word that starts
-with "strawber"?</p>
-<p><strong>Weaknesses:</strong> - Usually
-<strong>Space-Inefficient</strong>: Tries rarely save space when
-compared to storing strings in a set. - <strong>Not Standard</strong>:
-Most languages don't come with a built-in trie implementation. You'll
-need to implement one yourself.</p>
+<p><strong>Strength:</strong></p>
+<ul>
+<li>Sometimes <strong>Space-Efficient</strong>: If you're storing lots
+of words that start with similar patterns, tries may reduce the overall
+storage cost by storing shared prefixes once.</li>
+<li><strong>Efficient Prefix Queries</strong>: Can do sub string
+searching in linear time, without pre processing the string every time.
+Tries also can quickly answer queries about words with shared prefixes,
+like:
+<ul>
+<li>How many words start with "choco"?</li>
+<li>What's the most likely next letter in a word that starts with
+"strawber"?</li>
+</ul></li>
+</ul>
+<p><strong>Weaknesses:</strong></p>
+<ul>
+<li>Usually <strong>Space-Inefficient</strong>: Tries rarely save space
+when compared to storing strings in a set.</li>
+<li><strong>Not Standard</strong>: Most languages don't come with a
+built-in trie implementation. You'll need to implement one
+yourself.</li>
+</ul>
 <h2 id="relevant-coding-questions">Relevant Coding Questions</h2>
 <ul>
 <li><a
