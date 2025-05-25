@@ -106,33 +106,6 @@
   
   
   <entry>
-    <title>Coding Interview Expressions</title>
-    <link href="/2025/02/16/Coding-Interview-Expressions/"/>
-    <url>/2025/02/16/Coding-Interview-Expressions/</url>
-    
-    <content type="html"><![CDATA[<h2 id="words-phrases">Words &amp; Phrases</h2><ul><li>数组: Array</li><li>链表: Linked List</li><li>哈希表/字典: Hashmap / Dictionary</li><li>栈: Stack</li><li><strong>字典序</strong>: Lexicographical order</li><li>队列: Queue</li><li>双端队列: Deque (Double-ended Queue)</li><li>二叉树: Binary Tree</li><li>二叉搜索树: Binary Search Tree (BST)</li><li>堆/优先队列: Heap / Priority Queue</li><li>图: Graph</li><li>邻接矩阵: Adjacency Matrix</li><li>邻接表: Adjacency List</li><li>并查集/不相交集合: Union-Find / Disjoint Set</li><li>Trie 树/前缀树: Trie/Prefix Tree</li><li>红黑树: Red-Black Tree</li><li>AVL 树: AVL Tree</li><li>滑动窗口: Sliding Window</li><li>双指针: Two Pointers</li><li><strong>单调栈</strong>: Monotonic Stack</li><li><strong>单调队列</strong>: Monotonic Queue</li><li>动态规划: Dynamic Programming (DP)</li><li>线段树: Segment Tree</li><li>树状数组: Binary Indexed Tree / Fenwick Tree</li><li><strong>拓扑排序</strong>: Topological Sort</li><li>辅助函数: helper function</li><li>线段: Line segment</li><li>伪节点: Dummy node</li><li>回溯: backtrack</li><li>边界条件: boundary conditions</li><li>连续的: consecutively</li><li>可除尽的: divisible</li><li>哨兵值: Sentinel value</li></ul><h2 id="sentences">Sentences</h2><h3 id="ask-clarifying-questions">Ask clarifying questions</h3><ul><li>所以什么情况下会发生这种情况呢: So, in what situations would thishappen?</li><li>所以什么情况下我们这种安排会失败: So, in what situations would ourarrangement fail?</li><li>让我们用个例子去解释: Let's explain this with an example</li></ul><h3 id="think-out-aloud">Think out aloud</h3><ul><li>可以分成两种情况讨论: It can be discussed in two cases</li><li>有三种情况: There are three situations</li><li>我们可以得出来一个规律: So we can derive a pattern</li><li>我们可以反过来考虑: We can think about it the other way around</li><li>从后向前遍历: Iterate from the back to the start / Iteratebackwards</li><li>基于栈的方法: stack-based approach</li><li>逐个字符: character by character</li><li>a 和 b 的乘积: The product of a and b</li><li>对于...也是一样: The same applies to ...</li><li>第一次出现: first occurrence</li><li>出现的次数: The number of occurrences</li><li>处理edge cases: handle edge cases</li><li>记录出现的次数: count occurrence / count frequency</li><li>减少出现的次数: decrement its count</li><li>获得数组中值为1的元素数量: Get the number of elements equal to 1 inthe array</li><li>截至目前: As of now</li><li>基于...进行排序: sort the array based on ...</li><li>如果我们当前遍历的元素是1: If the current element we are iteratingover is 1</li><li>需要找左边第一个小于这个元素的元素: Need to find the first elementon the left that is smaller than this element</li><li>当这个循环停止的时候: when this loop stops</li><li>逐个字符都相同: The characters are identical one by one</li><li>如果我们读取到了乘法或者除法运算符，我们将立刻进行运算: If weencounter a multiplication or division operator, we will immediatelyperform the calculation</li><li>紧邻的上一个字符: The immediately preceding character</li><li>在数组的后半部分: In the latter half of the array</li><li>在数组的前半部分: In the first half of the array</li><li>我们可以比较这个元素和它紧邻的前面的元素: We can compare thiselement with the element immediately preceding it</li><li>我们可以把位置为 i 的元素移到 i - 1: We can move the element atposition i to position i - 1</li><li>所以我们需要记录一下哪个字符出现过: So we need to keep track ofwhich characters have already appeared</li><li>我们可以把这个链表分成两半: We can split this linked list into twohalves</li><li>数它连续出现了几次: count how many times it repeatsconsecutively</li><li>数连续出现的字符个数: count consecutive repeating characters</li></ul><h3 id="others">Others</h3><ul><li>我能思考一会吗: May I take a moment to think?</li><li>我的思路正确吗:<ul><li>Am I on the right track?</li><li>Is my approach correct?</li></ul></li><li>I have read and understood the problem, but I have someclarification questions and let's discuss about them.</li><li>Let's break this down step by step</li><li>If I go silent for a while, it means I'm thinking. When I'm ready tocontinue coding or share my thoughts, I'll let you know.</li><li>Alright, I've finished writing my code. I'll review it, then sharemy approach. After that, I'll provide some examples for testing.</li></ul><h2 id="references">References</h2><ul><li><ahref="https://www.xiaohongshu.com/explore/679cf52c00000000180112b4?xsec_token=ABmKxwUdqymzrY7YScNUmKiXCeB2bxHFcD9I3OiQb-39o=&amp;xsec_source=pc_user&amp;source=web_user_page">Leetcode口语词汇积累</a></li></ul>]]></content>
-    
-    
-    <categories>
-      
-      <category>Programming</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Coding</tag>
-      
-      <tag>Interview</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>Writing Essay(WE) Notes</title>
     <link href="/2025/01/12/PTE-Write-Essay-WE-Notes/"/>
     <url>/2025/01/12/PTE-Write-Essay-WE-Notes/</url>
