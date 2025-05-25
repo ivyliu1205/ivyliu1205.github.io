@@ -3,12 +3,13 @@ title: Coding Interview Expressions
 index_img: /images/programming/program.png
 banner_img: /images/programming/program.png
 excerpt: Expressions commonly used in coding interviews
-categories: Programming
+categories: Interview
 tags:
   - Coding
   - Interview
 date: 2025-02-16 15:35:27
 updated: 2025-02-16 15:35:27
+hide: true
 ---
 
 ## Words & Phrases

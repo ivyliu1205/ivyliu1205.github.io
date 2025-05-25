@@ -37,6 +37,7 @@ navbar:
 #---------------------------
 index:
   banner_img: '/images/common/index_bkg.jpg'
+  post_url_target: _blank
   slogan:
     enable: true
     text: "Welcome to Ivy's 喜欢您来 ;)"

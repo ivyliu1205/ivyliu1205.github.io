@@ -5,17 +5,17 @@ updated: {{ date }}
 index_img: /images/programming/program.png
 banner_img: /images/programming/program.png
 excerpt: ..
-categories: Programming
+categories: Interview
 tags:
-  - Java
   - Programming
+  - Knowledge
 ---
 
 {% note info %}
 XXXXX
 {% endnote %}
 
-## Contents
+## Common Questions
 
 
-## References
+## References 
