@@ -1,0 +1,1094 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/common/logo.png">
+  <link rel="icon" href="/images/common/logo.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Ivy Liu">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="A database management system is a software to store, organize, manage, and retrieve data.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Databases - System design concepts">
+<meta property="og:url" content="https://ivyliu1205.github.io/2025/05/25/Interview-Databases/index.html">
+<meta property="og:site_name" content="Ivy&#39;s Blog">
+<meta property="og:description" content="A database management system is a software to store, organize, manage, and retrieve data.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://ivyliu1205.github.io/images/programming/Database.jpg">
+<meta property="article:published_time" content="2025-05-25T09:04:33.000Z">
+<meta property="article:modified_time" content="2025-05-25T09:04:33.000Z">
+<meta property="article:author" content="Ivy Liu">
+<meta property="article:tag" content="Programming">
+<meta property="article:tag" content="Knowledge">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ivyliu1205.github.io/images/programming/Database.jpg">
+  
+  
+  
+  <title>Databases - System design concepts - Ivy&#39;s Blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"ivyliu1205.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Ivy&#39;s Blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/images/programming/program.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Databases - System design concepts"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-05-25 17:04" pubdate>
+          May 25, 2025 pm
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          526 words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          5 mins
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">Databases - System design concepts</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <div class="note note-info">
+            <p>A database management system is a software to store, organize,manage, and retrieve data.</p>
+          </div>
+<h2 id="types-of-databases">1. Types of databases</h2>
+<h3 id="relational-databases">1.1 Relational Databases</h3>
+<p>This database commonly uses <strong>Structured Query Language
+(SQL)</strong> for operations like creating, reading, updating, and
+deleting (CRUD) data.</p>
+<p>This database stores data in discrete tables, which can be joined
+together by fields known as foreign keys. For example, you might have a
+User table that contains data about your users, and join the users table
+to a Purchases table, which contains data about the purchases the users
+have made. <em>MySQL</em>, <em>Microsoft SQL Server</em>, and
+<em>Oracle</em> are examples.</p>
+<p>They are compliant with <strong>ACID (Atomicity, Consistency,
+Isolation, Durability)</strong>, which is a standard set of properties
+for reliable database transactions.</p>
+<h3 id="non-relationalnosql-databases">1.2 Non-Relational(NoSQL)
+Databases</h3>
+<p><strong>NoSQL</strong> is an umbrella term for any alternative system
+to traditional SQL databases. Sometimes, when we say <strong>NoSQL
+management systems</strong>, we mean any database that doesn't use a
+relational model. NoSQL databases use a data model that has a different
+structure than the rows and columns table structure used with RDBMS.</p>
+<p>NoSQL databases are different from each other. There are four kinds
+of this database:</p>
+<ul>
+<li>document DB</li>
+<li>key-value store DB</li>
+<li>column-oriented DB</li>
+<li>graph DB</li>
+</ul>
+<h4 id="document-databases">1.2.1 Document databases</h4>
+<p>A document-oriented database stores data in documents similar to
+<strong>JSON (JavaScript Object Notation)</strong> objects. Each
+document contains pairs of fields and values. The values can typically
+be a variety of types, including things like strings, numbers, booleans,
+arrays, or even other objects. A document database offers a flexible
+data model, much suited for semi-structured and typically unstructured
+data sets. They also support nested structures, making it easy to
+represent complex relationships or hierarchical data.</p>
+<p>A typical document will look like the following:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-punctuation">&#123;</span><br>  <span class="hljs-attr">&quot;_id&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;12345&quot;</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;foo bar&quot;</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">&quot;email&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;foo@bar.com&quot;</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">&quot;address&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><br>    <span class="hljs-attr">&quot;street&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;123 foo street&quot;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">&quot;city&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;some city&quot;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">&quot;state&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;some state&quot;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">&quot;zip&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;123456&quot;</span><br>  <span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">&quot;hobbies&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;music&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-string">&quot;guitar&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-string">&quot;reading&quot;</span><span class="hljs-punctuation">]</span><br><span class="hljs-punctuation">&#125;</span><br></code></pre></td></tr></table></figure>
+<p>Document databases allow you to query information not just by the
+unique identifier (like the key in key-value databases) but also by the
+internal content. You can apply conditions or filters to your queries.
+For example, you can find all users within a certain age group or of a
+certain status.</p>
+<p>Document databases also support aggregation operations (calculating,
+grouping, and summarizing data) and indexing (locating and retrieving
+documents based on the indexed fields).</p>
+<ul>
+<li><strong>Examples</strong>: MongoDB, Amazon DocumentDB</li>
+<li><strong>Use cases</strong>:
+<ol type="1">
+<li><strong>Content Management Systems (CMS)</strong>: Document
+databases allow for the storage of various content types and metadata.
+Each piece of content (e.g., blog post, article, or media file) can be
+stored as a document.</li>
+<li><strong>User profiles</strong>: Document databases allow nesting,
+enabling you to store hierarchical or grouped data within a single
+document. This makes it easy to model complex user profiles that include
+details like order histories, preferences, or social connections.</li>
+</ol></li>
+</ul>
+<h4 id="key-value-databases">1.2.2 Key-value databases</h4>
+<p>As the name suggests, <strong>key-value databases</strong> store data
+as pairs of keys and values. Each <strong>key</strong> is a unique
+identifier (like a name, ID, or reference number) and is associated with
+a <strong>value</strong>, which can be anything from a simple string to
+a more complex data structure, such as an object or a list.</p>
+<p>A simple view of data stored in a key-value database is given
+below:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs json">Key<span class="hljs-punctuation">:</span> user<span class="hljs-punctuation">:</span><span class="hljs-number">12345</span><br>Value<span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;foo bar&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-attr">&quot;email&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;foo@bar.com&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-attr">&quot;designation&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;software developer&quot;</span><span class="hljs-punctuation">&#125;</span><br></code></pre></td></tr></table></figure>
+<p>Key-value databases are optimized for fast, efficient, and simple
+lookups by key, but they are limited when it comes to complex query
+operations.</p>
+<ul>
+<li><strong>Examples</strong>: Redis, Amazon DynamoDB</li>
+<li><strong>Use cases</strong>:
+<ol type="1">
+<li><strong>Caching and session management</strong>: Key-value databases
+ensure quick access and updates for user session details such as
+authentication tokens, preferences, or temporary states.</li>
+<li><strong>Storing basic information</strong>: Key-value databases are
+a straightforward solution for applications requiring simple data
+storage without complex relationships. For example, an eCommerce website
+can store shopping cart data, where the key is the user ID, and the
+value is the cart's content.</li>
+</ol></li>
+</ul>
+<h4 id="column-orientedwide-column-databases">1.2.3
+Column-oriented/wide-column databases</h4>
+<p><strong>Сolumn-oriented (or wide-column)</strong> databases store
+data column by column rather than rows, organizing related information
+in column families. Unlike SQL databases, the structure of these columns
+doesn’t have to be consistent across rows. Each row within a family can
+have a completely different number of columns. This flexibility allows
+column-oriented databases to handle large amounts of data with varying
+schemas.</p>
+<p>Below is an example of column-oriented database:</p>
+<figure>
+<img src="/images/programming/WideColumnDbExample.png" srcset="/img/loading.gif" lazyload
+alt="Example of column-oriented databases" />
+<figcaption aria-hidden="true">Example of column-oriented
+databases</figcaption>
+</figure>
+<ul>
+<li><strong>Examples</strong>: HBase, Apache Cassandra</li>
+<li><strong>Use cases</strong>:
+<ol type="1">
+<li><strong>IoT systems</strong>:The massive volume of data generated by
+IoT devices, such as sensor readings and telemetry, is often stored in
+column-oriented databases. They can efficiently handle the high-write
+throughput and effectively store streaming data like temperature,
+humidity, and device statuses. Column-oriented databases also fit
+scenarios when you need to monitor manufacturing equipment and run
+predictive maintenance.</li>
+<li><strong>Big data analytics and BI tools</strong>: By storing data in
+columns, queries can focus on specific sets of data, minimizing the
+amount of irrelevant information that must be read and making analytical
+queries faster and more efficient. For example, if you want to calculate
+the total sales per region, only the "sales" and "region" columns have
+to be accessed.</li>
+</ol></li>
+</ul>
+<h4 id="graph-databases">1.2.4 Graph databases</h4>
+<p>A graph database stores data in the form of nodes and edges. Each
+element is contained as a node. The connections between elements in the
+database are called links or relationships. They work well for highly
+connected data, where the relationships or patterns may not be very
+obvious initially.</p>
+<p>Below is an example of how data is stored:</p>
+<figure>
+<img src="/images/programming/GraphDatabaseExample.png" srcset="/img/loading.gif" lazyload
+alt="Example of graph databases" />
+<figcaption aria-hidden="true">Example of graph databases</figcaption>
+</figure>
+<p>A graph database is optimized to capture and search the connections
+between elements, overcoming the overhead associated with JOINing
+several tables in SQL. Very few real-world business systems can survive
+solely on graph databases. As a result, graph databases are usually run
+alongside more traditional databases.</p>
+<ul>
+<li><strong>Examples</strong>: Neo4J, Amazon Neptune</li>
+<li><strong>Use cases</strong>:
+<ol type="1">
+<li><strong>Social networks</strong>: Graph databases are commonly used
+in social networking platforms, where users are connected to other users
+through relationships like "follower" or "message sender." Graph
+databases make it easy to query for friends of friends, mutual
+connections, or any other complex social relationship.</li>
+<li><strong>Recommender systems</strong>: Products, movies, or services
+can be traced to users through relationships like "purchased" or
+"watched," and the system can recommend items based on the connections
+and similarities between users and products.</li>
+<li><strong>Fraud detectio</strong>n: Graph databases are powerful tools
+for fraud detection because they focus on analyzing relationships
+between entities such as people, accounts, and transactions. They can
+identify patterns and anomalies that suggest fraudulent activities, such
+as uncovering circular money movements used in money laundering or
+unusual relationships between accounts.</li>
+</ol></li>
+</ul>
+<h4 id="multi-model-databases">1.2.5 Multi-model databases</h4>
+<p><strong>Multi-model databases</strong> support different ways of
+storing data (document, key-value, graph, and wide-column) within the
+same system. They allow applications to store data in the most
+convenient form, handling only one repository. For example, user data
+can be kept as documents and relations as graphs.</p>
+<ul>
+<li><strong>Examples</strong>:
+<ol type="1">
+<li><strong>Azure CosmosDB</strong> supports storing data in documents,
+key-value pairs, wide columns, and graphs. It’s compatible with MongoDB
+and Apache Cassandra and supports Apache Gremlin for querying graph
+data. It also allows for querying JSON data with an SQL-like
+language.</li>
+<li><strong>AWS DynamoDB</strong> supports document and key-value
+models. It includes reliability features, such as managed backups
+(automatically or semi-automatically backing up data at scheduled
+intervals), point-in-time recovery (restoring a database to a specific
+moment in time), and more.</li>
+</ol></li>
+</ul>
+<h3 id="hierarchical-databases">1.3 Hierarchical Databases</h3>
+<p>The hierarchical database looks similar to a family tree. A single
+object (the “parent”) has one or more objects beneath it (the “child”).
+No child can have more than one parent.</p>
+<p>In exchange for the rigid and complex navigation of the parent child
+structure, the hierarchical database offers high performance, as there’s
+easy access and a quick querying time.</p>
+<p>The Windows Registry is one example of this system.</p>
+<h2 id="types-of-data-processing-systems">2. Types of data processing
+systems</h2>
+<h3 id="oltp-online-transaction-processing">2.1 OLTP: Online Transaction
+Processing</h3>
+<p>It refers to systems that manage <strong>transactional</strong> data.
+Such data includes sales transactions (e.g., point-of-sale purchases),
+online orders, inventory updates, customer support interactions, and
+administrative updates like password changes or profile
+modifications.</p>
+<p>Due to their structured nature, OLTP systems typically follow a
+traditional database schema for efficient organization and retrieval of
+data. They focus on high volume and high velocity because they are often
+utilized by front-line workers with customer-facing
+responsibilities.</p>
+<p>OLTP Systems:</p>
+<ul>
+<li>MySQL</li>
+<li>Oracle Database</li>
+<li>PostgreSQL</li>
+<li>Microsoft SQL Server</li>
+</ul>
+<h4 id="characteristics">2.1.1 Characteristics</h4>
+<ul>
+<li><strong>High concurrency</strong>: Handle thousands (or millions) of
+users performing transactions simultaneously. This can be like multiple
+stores processing sales at once.</li>
+<li><strong>Real-time processing</strong>: Ensures instant updates to
+the system with each transaction</li>
+<li><strong>Short transactions</strong>: Executes quick operations like
+adding, updating, or deleting records.</li>
+<li><strong>Quick response times</strong>: Prioritizes speed to support
+time-sensitive processes. These systems often have millisecond response
+times.</li>
+</ul>
+<h4 id="examples">2.1.2 Examples</h4>
+<ul>
+<li><strong>Online banking applications</strong>: These systems allow
+customers to manage deposits, withdrawals, and account transfers. Making
+sure these are as near real-time as possible is important. Even if
+transactions may not be fully processed for a few days, these
+transactions must show up immediately.</li>
+<li><strong>CRM software</strong>: Tracks customer interactions for
+sales and support teams in real time, allowing them to create dynamic
+marketing and sales campaig</li>
+</ul>
+<h3 id="olap-online-analytical-processing">2.2 OLAP: Online Analytical
+Processing</h3>
+<p>It includes systems focused on analyzing large datasets, helping
+teams uncover patterns, trends, and insights for strategic
+decision-making.</p>
+<p>They utilize a special data design known as the “OLAP cube,” which
+organizes data in multi-dimensional arrays for more straightforward
+“slicing” of data. As computational demand changes, there has been a
+shift away from the cube and towards MPP (Massively Parallel
+Processing).</p>
+<figure>
+<img src="/images/programming/OLAPCubeSlicing.png" srcset="/img/loading.gif" lazyload
+alt="OLAP cube slicing" />
+<figcaption aria-hidden="true">OLAP cube slicing</figcaption>
+</figure>
+<p>OLAP Systems:</p>
+<ul>
+<li>Amazon Redshift</li>
+<li>Snowflake</li>
+<li>Microsoft Azure Analysis Services:</li>
+</ul>
+<h4 id="characteristics-1">2.2.1 Characteristics</h4>
+<ul>
+<li><strong>Multidimensional data structures</strong>: Organizes data
+into cubes, allowing for fast and flexible exploration across dimensions
+like time, geography, or product category.</li>
+<li><strong>Complex queries</strong>: Executes sophisticated queries
+that often span large datasets. Collecting these complex queries is
+effective and straightforward, using the multidimensional data
+structure.</li>
+<li><strong>Historical data analysis</strong>: This technique combines
+current and historical data to generate insights. Time is a common axis
+in the OLAP cube, so traversing through time for historical data is
+simple.</li>
+<li><strong>Business intelligence support</strong>: Powers dashboards,
+reporting tools, and predictive analytics.</li>
+</ul>
+<h4 id="examples-1">2.2.2 Examples</h4>
+<p>OLAP systems tend to focus on data availability. These are going to
+be things like data warehouses, dashboards, and analytical tools.</p>
+<ul>
+<li><strong>Data warehouses</strong>: Centralized repositories for
+aggregating data from multiple sources, often including OLTP systems.
+They enable efficient querying and analysis of large datasets.</li>
+<li><strong>Business intelligence dashboards</strong>: Provide visual
+analytics for performance metrics. By combining OLAP with powerful
+visualization tools, we can quickly and intuitively understand business
+performance.</li>
+<li><strong>Sales analysis tools</strong>: Help forecast trends and
+evaluate profitability.</li>
+</ul>
+<h2 id="features-of-databases">2. Features of databases</h2>
+<h3 id="compliance">2.1 Compliance</h3>
+<h4 id="acid">2.1.1 ACID</h4>
+<p><strong>ACID compliance</strong> refers to a set of properties
+(Atomicity, Consistency, Isolation, Durability) that guarantee reliable,
+correct, and safe execution of database transactions — ensuring data
+stays accurate and consistent even in cases of errors, crashes, or
+concurrent access. It's used in relational databases, and some NoSQL
+databases like MongoDB.</p>
+<p>ACID stands for:</p>
+<ul>
+<li><strong>A (Atomicity)</strong>: Transactions are treated as a single
+unit - so if one action fails, the whole transaction fails.</li>
+<li><strong>C (Consistency)</strong>: The database must remain in a
+consistent state for a transaction to succeed</li>
+<li><strong>I (Isolation)</strong>: Simultaneous transactions do not
+affect the outcome of one another.</li>
+<li><strong>D (Durability)</strong>: Once a transaction is completed, it
+will persist even in the event of a system crash</li>
+</ul>
+<p>Common use cases:</p>
+<ol type="1">
+<li>Banking and financial systems</li>
+<li>Order processing (e-commerce, ticketing)</li>
+<li>Inventory management</li>
+<li>Anything where <strong>data integrity is critical</strong></li>
+</ol>
+<h4 id="base">2.1.2 BASE</h4>
+<p><strong>BASE compliance</strong> refers to a set of principles used
+in NoSQL and distributed databases that prioritize
+<strong>availability</strong>, <strong>scalability</strong>, and
+<strong>flexibility</strong> over immediate consistency. It allows
+systems to remain responsive and partition-tolerant by accepting
+eventual consistency instead of enforcing strict rules like ACID.</p>
+<p><strong>BASE</strong> stands for:</p>
+<ul>
+<li><strong>BA (Basically Available)</strong>: The system will always be
+available for reads and writes, even if some parts of the system are
+down.</li>
+<li><strong>S (soft state)</strong>: The system’s state can change over
+time, even without input, due to eventual consistency.</li>
+<li><strong>E (Eventually consistent)</strong>: The system will
+eventually converge to a consistent state, but it’s not guaranteed
+immediately after a write.</li>
+</ul>
+<p>Common use cases:</p>
+<ol type="1">
+<li>Real-time analytics</li>
+<li>Logging or event tracking</li>
+<li>Caching systems</li>
+<li>High-throughput systems where eventual consistency (like in NoSQL)
+is acceptable</li>
+</ol>
+<h2 id="references">References</h2>
+<ul>
+<li><a
+target="_blank" rel="noopener" href="https://www.mongodb.com/resources/basics/databases/types">Types of
+Databases</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.altexsoft.com/blog/nosql-databases/">NoSQL
+Databases Visually Explained with Examples</a></li>
+<li><a
+target="_blank" rel="noopener" href="https://www.mongodb.com/resources/basics/databases/nosql-explained">What
+is NoSQL?</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.datacamp.com/blog/oltp-vs-olap">OLTP vs OLAP: A
+Beginner’s Guide to Data Systems</a></li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Interview/" class="category-chain-item">Interview</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Programming/" class="print-no-link">#Programming</a>
+      
+        <a href="/tags/Knowledge/" class="print-no-link">#Knowledge</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Databases - System design concepts</div>
+      <div>https://ivyliu1205.github.io/2025/05/25/Interview-Databases/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>Ivy Liu</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>May 25, 2025</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/03/10/Lingoda-Group-Class-Notes-68/" title="Lingoda Group Class Notes 68">
+                        <span class="hidden-mobile">Lingoda Group Class Notes 68</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+    <div id="giscus" class="giscus"></div>
+    <script type="text/javascript">
+      Fluid.utils.loadComments('#giscus', function() {
+        var options = {"repo":"ivyliu1205/ivyliu1205.github.io","repo-id":"R_kgDOGmhpVg","category":"General","category-id":"DIC_kwDOGmhpVs4CfJ8p","theme-light":"light","theme-dark":"dark","mapping":"title","reactions-enabled":1,"emit-metadata":0,"input-position":"top","lang":"en","theme":"light","loading":"lazy"};
+        var attributes = {};
+        for (let option in options) {
+          if (!option.startsWith('theme-')) {
+            var key = option.startsWith('data-') ? option : 'data-' + option;
+            attributes[key] = options[option];
+          }
+        }
+        var light = 'light';
+        var dark = 'dark';
+        window.GiscusThemeLight = light;
+        window.GiscusThemeDark = dark;
+        attributes['data-theme'] = document.documentElement.getAttribute('data-user-color-scheme') === 'dark' ? dark : light;
+        for (let attribute in attributes) {
+          var value = attributes[attribute];
+          if (value === undefined || value === null || value === '') {
+            delete attributes[attribute];
+          }
+        }
+        var s = document.createElement('script');
+        s.setAttribute('src', 'https://giscus.app/client.js');
+        s.setAttribute('crossorigin', 'anonymous');
+        for (let attribute in attributes) {
+          s.setAttribute(attribute, attributes[attribute]);
+        }
+        var ss = document.getElementsByTagName('script');
+        var e = ss.length > 0 ? ss[ss.length - 1] : document.head || document.documentElement;
+        e.parentNode.insertBefore(s, e.nextSibling);
+      });
+    </script>
+    <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>
